@@ -1,0 +1,178 @@
+﻿<Window x:Class="RestaurantApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:vm="clr-namespace:RestaurantApp.ViewModels"
+        xmlns:views="clr-namespace:RestaurantApp.Views"
+        xmlns:shared="clr-namespace:RestaurantApp.Views.Shared"
+        Title="RestaurantApp"
+        UseLayoutRounding="True"
+        SnapsToDevicePixels="True"
+        Height="600"
+        Width="900"
+        WindowStartupLocation="CenterScreen"
+        Background="{StaticResource PrimaryLightBrush}">
+
+    <Window.Resources>
+        <DataTemplate DataType="{x:Type vm:AllOrdersViewModel}">
+            <views:AllOrdersView />
+        </DataTemplate>
+        
+        <DataTemplate DataType="{x:Type vm:AddOrderViewModel}">
+            <views:AddOrderView />
+        </DataTemplate>
+
+
+        <DataTemplate DataType="{x:Type vm:AllAreasViewModel}">
+            <views:AllAreasView />
+        </DataTemplate>
+
+        <DataTemplate DataType="{x:Type vm:AddAreaViewModel}">
+            <views:AddAreaView />
+        </DataTemplate>
+
+        <DataTemplate DataType="{x:Type vm:AllTablesViewModel}">
+            <views:AllTablesView />
+        </DataTemplate>
+
+        <DataTemplate DataType="{x:Type vm:AllMenuItemsViewModel}">
+            <views:AllMenuItemsView />
+        </DataTemplate>
+
+        <DataTemplate DataType="{x:Type vm:AllIngredientsViewModel}">
+            <views:AllIngredientsView />
+        </DataTemplate>
+
+        <DataTemplate DataType="{x:Type vm:AllReservationsViewModel}">
+            <views:AllReservationsView />
+        </DataTemplate>
+
+        <DataTemplate DataType="{x:Type vm:AllCustomersViewModel}">
+            <views:AllCustomersView />
+        </DataTemplate>
+
+        <DataTemplate DataType="{x:Type vm:AllWaitersViewModel}">
+            <views:AllWaitersView />
+        </DataTemplate>
+
+        <DataTemplate DataType="{x:Type vm:AllPaymentsViewModel}">
+            <views:AllPaymentsView />
+        </DataTemplate>
+        
+        <DataTemplate DataType="{x:Type vm:DailySalesReportViewModel}">
+            <views:DailySalesReportView />
+        </DataTemplate>
+
+        <DataTemplate DataType="{x:Type vm:TopMenuItemsReportViewModel}">
+            <views:TopMenuItemsReportView />
+        </DataTemplate>
+
+        <DataTemplate DataType="{x:Type vm:TableUsageReportViewModel}">
+            <views:TableUsageReportView />
+        </DataTemplate>
+
+    </Window.Resources>
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="230" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+
+        <!-- LEWY PANEL / SIDEBAR -->
+        <Border Grid.Column="0"
+                Background="{StaticResource SidebarBackgroundBrush}"
+                Padding="10,12"
+                BorderBrush="#22000000"
+                BorderThickness="0,0,1,0">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+
+                <!-- Logo / Tytuł -->
+                <StackPanel Grid.Row="0" Margin="2,0,2,12">
+                    <TextBlock Text="RestaurantApp"
+                               FontSize="18"
+                               FontWeight="SemiBold"
+                               Foreground="White" />
+                    <TextBlock Text="Panel obsługi restauracji"
+                               FontSize="11"
+                               Foreground="#CCECF0F1"
+                               Margin="0,2,0,0" />
+                    <Separator Margin="0,10,0,0" />
+                </StackPanel>
+
+                <!-- Lista przycisków nawigacji -->
+                <ScrollViewer Grid.Row="1"
+                              VerticalScrollBarVisibility="Auto"
+                              Margin="0,4,0,4">
+                    <ItemsControl ItemsSource="{Binding Commands}">
+                        <ItemsControl.ItemTemplate>
+                            <DataTemplate>
+                                <Button Content="{Binding DisplayName}"
+                                        Command="{Binding Command}"
+                                        Style="{StaticResource NavButtonStyle}" />
+                            </DataTemplate>
+                        </ItemsControl.ItemTemplate>
+                    </ItemsControl>
+                </ScrollViewer>
+
+                <!-- Stopka / wersja / cokolwiek -->
+                <StackPanel Grid.Row="2"
+                            Orientation="Vertical"
+                            Margin="2,8,2,0">
+                    <Separator Margin="0,0,0,6" />
+                    <TextBlock Text="v1.0.0"
+                               Foreground="#88ECF0F1"
+                               FontSize="11" />
+                    <TextBlock Text="© 2025 RestaurantApp"
+                               Foreground="#66ECF0F1"
+                               FontSize="10" />
+                </StackPanel>
+            </Grid>
+        </Border>
+
+        <!-- PRAWA STRONA – ZAWARTOŚĆ -->
+        <Border Grid.Column="1"
+                Margin="10"
+                Background="White"
+                Padding="10"
+                CornerRadius="6"
+                BorderBrush="#FFD0D3D4"
+                BorderThickness="1"
+                SnapsToDevicePixels="True">
+            <TabControl ItemsSource="{Binding Workspaces}"
+                        IsSynchronizedWithCurrentItem="True"
+                        Style="{StaticResource MainTabControlStyle}">
+                <TabControl.ItemTemplate>
+                    <DataTemplate>
+                        <Grid Margin="6,2">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition Width="Auto"/>
+                            </Grid.ColumnDefinitions>
+
+                            <TextBlock Text="{Binding DisplayName}"
+                       VerticalAlignment="Center"
+                       Margin="0,0,8,0"/>
+
+                            <Button Grid.Column="1"
+                    Content="✕"
+                    Width="22"
+                    Height="22"
+                    Padding="0"
+                    Margin="0"
+                    Command="{Binding CloseCommand}"
+                    Background="Transparent"
+                    Foreground="Gray"
+                    BorderThickness="0"
+                    Cursor="Hand" />
+                        </Grid>
+                    </DataTemplate>
+                </TabControl.ItemTemplate>
+            </TabControl>
+        </Border>
+    </Grid>
+</Window>
