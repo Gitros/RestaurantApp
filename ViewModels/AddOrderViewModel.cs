@@ -195,7 +195,13 @@ public class AddOrderViewModel : WorkspaceViewModel
         _context.OrderItems.AddRange(orderItems);
         _context.SaveChanges();
 
-        WeakReferenceMessenger.Default.Send(new OrderSavedMessage(order.OrderId));
+        WeakReferenceMessenger.Default.Send(
+            new UiNotificationMessage(
+                UiNotificationType.Success,
+                $"Zapisano zamówienie #{order.OrderId}"
+            )
+        );
+
         OnRequestClose();
     }
 

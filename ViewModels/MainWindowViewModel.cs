@@ -5,6 +5,10 @@ using System.ComponentModel;
 using System.Diagnostics;
 using System.Windows.Data;
 using System.Windows.Forms;
+using CommunityToolkit.Mvvm.Messaging;
+using RestaurantApp.Messages;
+using System.Windows.Threading;
+
 
 namespace RestaurantApp.ViewModels;
 
@@ -14,6 +18,43 @@ public class MainWindowViewModel : BaseViewModel
     private ReadOnlyCollection<CommandViewModel> _Commands;
     private ObservableCollection<WorkspaceViewModel> _Workspaces;
     #endregion
+
+    // ===== NOTYFIKACJE (BANNER) =====
+    private string _notificationText = "";
+    public string NotificationText
+    {
+        get => _notificationText;
+        set { _notificationText = value; OnPropertyChanged(() => NotificationText); }
+    }
+
+    private bool _isNotificationVisible;
+    public bool IsNotificationVisible
+    {
+        get => _isNotificationVisible;
+        set { _isNotificationVisible = value; OnPropertyChanged(() => IsNotificationVisible); }
+    }
+
+
+
+    public MainWindowViewModel()
+    {
+        WeakReferenceMessenger.Default.Register<UiNotificationMessage>(this, (_, msg) =>
+        {
+            NotificationText = msg.Value.Text;
+            IsNotificationVisible = true;
+
+            var timer = new DispatcherTimer { Interval = TimeSpan.FromSeconds(3) };
+            timer.Tick += (_, __) =>
+            {
+                timer.Stop();
+                IsNotificationVisible = false;
+            };
+            timer.Start();
+        });
+    }
+
+
+
 
     #region Commands
     public ReadOnlyCollection<CommandViewModel> Commands

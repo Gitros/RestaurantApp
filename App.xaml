@@ -4,6 +4,7 @@
              xmlns:local="clr-namespace:RestaurantApp"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
+        <BooleanToVisibilityConverter x:Key="BoolToVis" />
 
         <!-- PALETA KOLORÓW -->
         <SolidColorBrush x:Key="PrimaryBrush" Color="#FF34495E" />

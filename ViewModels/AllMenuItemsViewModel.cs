@@ -1,8 +1,8 @@
 ﻿using RestaurantApp.Data;
 using RestaurantApp.Dtos;
-using RestaurantApp.Entities;
 using System.Collections.ObjectModel;
-using System.Linq;
+using System.ComponentModel;
+using System.Windows.Data;
 
 namespace RestaurantApp.ViewModels;
 
@@ -12,10 +12,60 @@ public class AllMenuItemsViewModel : WorkspaceViewModel
 
     public ObservableCollection<MenuItemListItemDto> MenuItems { get; } = new();
 
+    // To bindujesz do DataGrid
+    public ICollectionView MenuItemsView { get; }
+
+    private string _searchText = "";
+    public string SearchText
+    {
+        get => _searchText;
+        set
+        {
+            _searchText = value ?? "";
+            OnPropertyChanged(() => SearchText);
+            MenuItemsView.Refresh();
+            OnPropertyChanged(() => FilteredCountText);
+        }
+    }
+
+    private bool _onlyActive;
+    public bool OnlyActive
+    {
+        get => _onlyActive;
+        set
+        {
+            _onlyActive = value;
+            OnPropertyChanged(() => OnlyActive);
+            MenuItemsView.Refresh();
+            OnPropertyChanged(() => FilteredCountText);
+        }
+    }
+
+    // prosta filtracja po nazwie kategorii (textbox), żeby nie robić od razu comboboxa
+    private string _categoryFilter = "";
+    public string CategoryFilter
+    {
+        get => _categoryFilter;
+        set
+        {
+            _categoryFilter = value ?? "";
+            OnPropertyChanged(() => CategoryFilter);
+            MenuItemsView.Refresh();
+            OnPropertyChanged(() => FilteredCountText);
+        }
+    }
+
+    public string FilteredCountText => $"Pozycji: {MenuItemsView.Cast<object>().Count()}";
+
     public AllMenuItemsViewModel()
     {
-        base.DisplayName = "Menu";
+        DisplayName = "Menu";
+
+        MenuItemsView = CollectionViewSource.GetDefaultView(MenuItems);
+        MenuItemsView.Filter = FilterRow;
+
         LoadMenuItems();
+        OnPropertyChanged(() => FilteredCountText);
     }
 
     private void LoadMenuItems()
@@ -28,7 +78,7 @@ public class AllMenuItemsViewModel : WorkspaceViewModel
             {
                 MenuItemId = m.MenuItemId,
                 MenuCategoryId = m.MenuCategoryId,
-                MenuCategoryName = m.MenuCategory.Name, // FK -> nazwa kategorii
+                MenuCategoryName = m.MenuCategory.Name,
                 Name = m.Name,
                 BasePrice = m.BasePrice,
                 IsActive = m.IsActive
@@ -37,5 +87,35 @@ public class AllMenuItemsViewModel : WorkspaceViewModel
 
         foreach (var row in data)
             MenuItems.Add(row);
+
+        MenuItemsView.Refresh();
+        OnPropertyChanged(() => FilteredCountText);
+    }
+
+    private bool FilterRow(object obj)
+    {
+        if (obj is not MenuItemListItemDto row) return false;
+
+        // Search po nazwie menu itemu
+        if (!string.IsNullOrWhiteSpace(SearchText))
+        {
+            if (string.IsNullOrWhiteSpace(row.Name) ||
+                !row.Name.Contains(SearchText, StringComparison.OrdinalIgnoreCase))
+                return false;
+        }
+
+        // Filtr po kategorii (po nazwie)
+        if (!string.IsNullOrWhiteSpace(CategoryFilter))
+        {
+            if (string.IsNullOrWhiteSpace(row.MenuCategoryName) ||
+                !row.MenuCategoryName.Contains(CategoryFilter, StringComparison.OrdinalIgnoreCase))
+                return false;
+        }
+
+        // Tylko aktywne
+        if (OnlyActive && !row.IsActive)
+            return false;
+
+        return true;
     }
 }

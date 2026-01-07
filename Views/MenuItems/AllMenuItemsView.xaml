@@ -8,30 +8,65 @@
              d:DesignHeight="450"
              d:DesignWidth="800">
 
-	<shared:ListPageShell
+    <shared:ListPageShell
         Title="Pozycje menu"
-        CountText="{Binding MenuItems.Count, StringFormat='Pozycji w menu: {0}'}">
+        CountText="{Binding FilteredCountText}">
 
-		<DataGrid ItemsSource="{Binding MenuItems}"
+        <!-- TOOLBAR -->
+        <shared:ListPageShell.ToolbarContent>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="220"/>
+                    <ColumnDefinition Width="12"/>
+                    <ColumnDefinition Width="220"/>
+                    <ColumnDefinition Width="12"/>
+                    <ColumnDefinition Width="140"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <!-- Szukaj po nazwie -->
+                <TextBox Grid.Column="0"
+                         Height="28"
+                         VerticalContentAlignment="Center"
+                         Text="{Binding SearchText, UpdateSourceTrigger=PropertyChanged}"
+                         ToolTip="Szukaj po nazwie"/>
+
+                <!-- Filtr po kategorii (po nazwie) -->
+                <TextBox Grid.Column="2"
+                         Height="28"
+                         VerticalContentAlignment="Center"
+                         Text="{Binding CategoryFilter, UpdateSourceTrigger=PropertyChanged}"
+                         ToolTip="Filtr po kategorii"/>
+
+                <!-- Tylko aktywne -->
+                <CheckBox Grid.Column="4"
+                          Content="Tylko aktywne"
+                          VerticalAlignment="Center"
+                          IsChecked="{Binding OnlyActive}"/>
+            </Grid>
+        </shared:ListPageShell.ToolbarContent>
+
+        <!-- LISTA -->
+        <DataGrid ItemsSource="{Binding MenuItemsView}"
                   IsReadOnly="True">
-			<DataGrid.Columns>
-				<DataGridTextColumn Header="ID"
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="ID"
                                     Binding="{Binding MenuItemId}"
                                     Width="60" />
-				<DataGridTextColumn Header="Kategoria"
+                <DataGridTextColumn Header="Kategoria"
                                     Binding="{Binding MenuCategoryName}"
                                     Width="*" />
-				<DataGridTextColumn Header="Nazwa"
+                <DataGridTextColumn Header="Nazwa"
                                     Binding="{Binding Name}"
                                     Width="*" />
-				<DataGridTextColumn Header="Cena"
+                <DataGridTextColumn Header="Cena"
                                     Binding="{Binding BasePrice, StringFormat=\{0:C\}}"
                                     Width="100" />
-				<DataGridCheckBoxColumn Header="Aktywne"
+                <DataGridCheckBoxColumn Header="Aktywne"
                                         Binding="{Binding IsActive}"
                                         Width="80" />
-			</DataGrid.Columns>
-		</DataGrid>
+            </DataGrid.Columns>
+        </DataGrid>
 
-	</shared:ListPageShell>
+    </shared:ListPageShell>
 </UserControl>

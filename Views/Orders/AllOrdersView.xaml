@@ -4,34 +4,43 @@
              xmlns:shared="clr-namespace:RestaurantApp.Views.Shared">
 
     <shared:ListPageShell Title="Zamówienia"
-                          CountText="{Binding Orders.Count, StringFormat='Liczba zamówień: {0}'}">
+                      CountText="{Binding Orders.Count, StringFormat='Zamówień: {0}'}">
 
         <shared:ListPageShell.ToolbarContent>
             <Grid>
                 <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="*" />
-                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="140"/>
+                    <ColumnDefinition Width="10"/>
+                    <ColumnDefinition Width="160"/>
                 </Grid.ColumnDefinitions>
 
-                <TextBlock Text=" " VerticalAlignment="Center"/>
-
                 <Button Grid.Column="1"
-                        Content="Dodaj zamówienie"
-                        Width="160"
-                        Command="{Binding AddOrderCommand}" />
+                    Content="Dodaj zamówienie"
+                    Command="{Binding AddOrderCommand}"
+                    Width="140"/>
+
+                <Button Grid.Column="3"
+                    Content="Zamknij zamówienie"
+                    Command="{Binding CloseOrderCommand}"
+                    Width="160"/>
             </Grid>
         </shared:ListPageShell.ToolbarContent>
 
-        <DataGrid ItemsSource="{Binding Orders}" IsReadOnly="True">
+        <DataGrid ItemsSource="{Binding Orders}"
+              SelectedItem="{Binding SelectedOrder}"
+              IsReadOnly="True">
             <DataGrid.Columns>
-                <DataGridTextColumn Header="ID" Binding="{Binding OrderId}" Width="70"/>
-                <DataGridTextColumn Header="Stolik" Binding="{Binding TableId}" Width="80"/>
-                <DataGridTextColumn Header="Kelner" Binding="{Binding WaiterId}" Width="80"/>
+                <DataGridTextColumn Header="ID" Binding="{Binding OrderId}" Width="60"/>
                 <DataGridTextColumn Header="Data" Binding="{Binding OrderDateTime, StringFormat=\{0:yyyy-MM-dd HH:mm\}}" Width="160"/>
-                <DataGridTextColumn Header="Status" Binding="{Binding Status}" Width="120"/>
-                <DataGridTextColumn Header="Suma" Binding="{Binding TotalAmount, StringFormat=\{0:C\}}" Width="120"/>
+                <DataGridTextColumn Header="Stolik" Binding="{Binding TableName}" Width="100"/>
+                <DataGridTextColumn Header="Kelner" Binding="{Binding WaiterName}" Width="160"/>
+                <DataGridTextColumn Header="Klient" Binding="{Binding CustomerName}" Width="160"/>
+                <DataGridTextColumn Header="Status" Binding="{Binding Status}" Width="110"/>
+                <DataGridTextColumn Header="Kwota" Binding="{Binding TotalAmount, StringFormat=\{0:C\}}" Width="120"/>
             </DataGrid.Columns>
         </DataGrid>
 
     </shared:ListPageShell>
+
 </UserControl>

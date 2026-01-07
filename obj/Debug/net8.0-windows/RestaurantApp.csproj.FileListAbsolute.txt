@@ -165,3 +165,4 @@ C:\Users\jakub\Desktop\programowanie desktopowych aplikacji biznesowych\Projekt1
 C:\Users\jakub\Desktop\programowanie desktopowych aplikacji biznesowych\Projekt1\RestaurantApp\bin\Debug\net8.0-windows\CommunityToolkit.Mvvm.dll
 C:\Users\jakub\Desktop\programowanie desktopowych aplikacji biznesowych\Projekt1\RestaurantApp\obj\Debug\net8.0-windows\Views\Orders\AddOrderView.g.cs
 C:\Users\jakub\Desktop\programowanie desktopowych aplikacji biznesowych\Projekt1\RestaurantApp\obj\Debug\net8.0-windows\Views\Orders\AddOrderView.baml
+C:\Users\jakub\Desktop\programowanie desktopowych aplikacji biznesowych\Projekt1\RestaurantApp\obj\Debug\net8.0-windows\RestaurantApp.sourcelink.json

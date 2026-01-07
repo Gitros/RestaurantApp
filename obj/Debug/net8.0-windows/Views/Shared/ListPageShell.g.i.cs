@@ -60,7 +60,7 @@ namespace RestaurantApp.Views.Shared {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/RestaurantApp;component/views/shared/listpageshell.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/RestaurantApp;V1.0.0.0;component/views/shared/listpageshell.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\..\Views\Shared\ListPageShell.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

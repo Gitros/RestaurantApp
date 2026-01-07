@@ -12,9 +12,9 @@ TRACE;DEBUG;NET;NET8_0;NETCOREAPP;WINDOWS;WINDOWS7_0;NET5_0_OR_GREATER;NET6_0_OR
 C:\Users\jakub\Desktop\programowanie desktopowych aplikacji biznesowych\Projekt1\RestaurantApp\App.xaml
 16-2050682861
 
-65-616270599
+67568464753
 239759716430
 MainWindow.xaml;Views\Areas\AddAreaView.xaml;Views\Areas\AllAreasView.xaml;Views\Customers\AllCustomersView.xaml;Views\Ingredients\AllIngredientsView.xaml;Views\MenuItems\AllMenuItemsView.xaml;Views\Orders\AddOrderView.xaml;Views\Orders\AllOrdersView.xaml;Views\Payment\AllPaymentsView.xaml;Views\Report\DailySalesReportView.xaml;Views\Report\TableUsageReportView.xaml;Views\Report\TopMenuItemsReportView.xaml;Views\Reservations\AllReservationsView.xaml;Views\Shared\ListPageShell.xaml;Views\Tables\AllTablesView.xaml;Views\Waiter\AllWaitersView.xaml;
 
-True
+False
 

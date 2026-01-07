@@ -135,44 +135,63 @@
         </Border>
 
         <!-- PRAWA STRONA – ZAWARTOŚĆ -->
-        <Border Grid.Column="1"
-                Margin="10"
-                Background="White"
-                Padding="10"
-                CornerRadius="6"
-                BorderBrush="#FFD0D3D4"
-                BorderThickness="1"
-                SnapsToDevicePixels="True">
-            <TabControl ItemsSource="{Binding Workspaces}"
-                        IsSynchronizedWithCurrentItem="True"
-                        Style="{StaticResource MainTabControlStyle}">
-                <TabControl.ItemTemplate>
-                    <DataTemplate>
-                        <Grid Margin="6,2">
-                            <Grid.ColumnDefinitions>
-                                <ColumnDefinition Width="Auto"/>
-                                <ColumnDefinition Width="Auto"/>
-                            </Grid.ColumnDefinitions>
+        <Grid Grid.Column="1" Margin="10">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
 
-                            <TextBlock Text="{Binding DisplayName}"
-                       VerticalAlignment="Center"
-                       Margin="0,0,8,0"/>
+            <!-- BANNER -->
+            <Border Grid.Row="0"
+            Background="#FF2ECC71"
+            CornerRadius="6"
+            Padding="10"
+            Margin="0,0,0,10"
+            Visibility="{Binding IsNotificationVisible, Converter={StaticResource BoolToVis}}">
+                <TextBlock Text="{Binding NotificationText}"
+                   Foreground="White"
+                   FontWeight="SemiBold"/>
+            </Border>
 
-                            <Button Grid.Column="1"
-                    Content="✕"
-                    Width="22"
-                    Height="22"
-                    Padding="0"
-                    Margin="0"
-                    Command="{Binding CloseCommand}"
-                    Background="Transparent"
-                    Foreground="Gray"
-                    BorderThickness="0"
-                    Cursor="Hand" />
-                        </Grid>
-                    </DataTemplate>
-                </TabControl.ItemTemplate>
-            </TabControl>
-        </Border>
+            <!-- CONTENT -->
+            <Border Grid.Row="1"
+            Background="White"
+            Padding="10"
+            CornerRadius="6"
+            BorderBrush="#FFD0D3D4"
+            BorderThickness="1"
+            SnapsToDevicePixels="True">
+                <TabControl ItemsSource="{Binding Workspaces}"
+                    IsSynchronizedWithCurrentItem="True"
+                    Style="{StaticResource MainTabControlStyle}">
+                    <TabControl.ItemTemplate>
+                        <DataTemplate>
+                            <Grid Margin="6,2">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="Auto"/>
+                                    <ColumnDefinition Width="Auto"/>
+                                </Grid.ColumnDefinitions>
+
+                                <TextBlock Text="{Binding DisplayName}"
+                                   VerticalAlignment="Center"
+                                   Margin="0,0,8,0"/>
+
+                                <Button Grid.Column="1"
+                                Content="✕"
+                                Width="22"
+                                Height="22"
+                                Padding="0"
+                                Margin="0"
+                                Command="{Binding CloseCommand}"
+                                Background="Transparent"
+                                Foreground="Gray"
+                                BorderThickness="0"
+                                Cursor="Hand" />
+                            </Grid>
+                        </DataTemplate>
+                    </TabControl.ItemTemplate>
+                </TabControl>
+            </Border>
+        </Grid>
     </Grid>
 </Window>
