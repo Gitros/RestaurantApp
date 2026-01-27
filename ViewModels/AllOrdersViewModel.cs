@@ -49,9 +49,9 @@ public class AllOrdersViewModel : WorkspaceViewModel
         Orders.Clear();
 
         var data = _context.Orders
-            .Include(o => o.Table)
-            .Include(o => o.Waiter)
-            .Include(o => o.Customer)
+            //.Include(o => o.Table)
+            //.Include(o => o.Waiter)
+            //.Include(o => o.Customer)
             .OrderByDescending(o => o.OrderDateTime)
             .Select(o => new OrderListItemDto
             {
