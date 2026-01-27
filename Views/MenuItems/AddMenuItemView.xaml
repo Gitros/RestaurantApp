@@ -3,6 +3,36 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:shared="clr-namespace:RestaurantApp.Views.Shared">
 
+    <UserControl.Resources>
+
+        <ControlTemplate x:Key="UnderErrorTemplate">
+            <StackPanel>
+                <Border BorderBrush="Tomato"
+                        BorderThickness="2"
+                        CornerRadius="3">
+                    <AdornedElementPlaceholder x:Name="adorner"/>
+                </Border>
+
+                <TextBlock Foreground="Tomato"
+                           FontSize="11"
+                           Margin="2,4,0,0"
+                           Text="{Binding ElementName=adorner,
+                                          Path=AdornedElement.(Validation.Errors)[0].ErrorContent}" />
+            </StackPanel>
+        </ControlTemplate>
+
+        <Style x:Key="FormTextBoxStyle" TargetType="TextBox">
+            <Setter Property="Margin" Value="0,4,0,10"/>
+            <Setter Property="Validation.ErrorTemplate" Value="{StaticResource UnderErrorTemplate}"/>
+        </Style>
+
+        <Style x:Key="FormComboBoxStyle" TargetType="ComboBox">
+            <Setter Property="Margin" Value="0,4,0,10"/>
+            <Setter Property="Validation.ErrorTemplate" Value="{StaticResource UnderErrorTemplate}"/>
+        </Style>
+
+    </UserControl.Resources>
+
     <shared:ListPageShell Title="Dodaj pozycję menu">
 
         <shared:ListPageShell.ToolbarContent>
@@ -14,27 +44,36 @@
         <StackPanel Margin="10" Width="450">
 
             <TextBlock Text="Kategoria" />
-            <ComboBox ItemsSource="{Binding Categories}"
-                      SelectedItem="{Binding SelectedCategory}"
+            <ComboBox Style="{StaticResource FormComboBoxStyle}"
+                      ItemsSource="{Binding Categories}"
                       DisplayMemberPath="Name"
-                      Margin="0,4,0,10" />
+                      SelectedItem="{Binding SelectedCategory,
+                                            UpdateSourceTrigger=PropertyChanged,
+                                            ValidatesOnDataErrors=True}" />
 
             <TextBlock Text="Nazwa" />
-            <TextBox Text="{Binding Name, UpdateSourceTrigger=PropertyChanged}"
-                     Margin="0,4,0,10" />
+            <TextBox Style="{StaticResource FormTextBoxStyle}"
+                     Text="{Binding Name,
+                                    UpdateSourceTrigger=PropertyChanged,
+                                    ValidatesOnDataErrors=True}" />
 
             <TextBlock Text="Opis" />
-            <TextBox Text="{Binding Description}"
+            <TextBox Style="{StaticResource FormTextBoxStyle}"
+                     Text="{Binding Description,
+                                    UpdateSourceTrigger=PropertyChanged,
+                                    ValidatesOnDataErrors=True}"
                      AcceptsReturn="True"
-                     Height="80"
-                     Margin="0,4,0,10" />
+                     Height="80" />
 
             <TextBlock Text="Cena bazowa" />
-            <TextBox Text="{Binding BasePrice, UpdateSourceTrigger=PropertyChanged}"
-                     Margin="0,4,0,10" />
+            <TextBox Style="{StaticResource FormTextBoxStyle}"
+                     Text="{Binding BasePriceText,
+                                    UpdateSourceTrigger=PropertyChanged,
+                                    ValidatesOnDataErrors=True}" />
 
             <CheckBox Content="Aktywne"
-                      IsChecked="{Binding IsActive}" />
+                      IsChecked="{Binding IsActive}"
+                      Margin="0,4,0,0"/>
 
         </StackPanel>
 
