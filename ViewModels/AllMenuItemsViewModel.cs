@@ -1,8 +1,10 @@
 ﻿using RestaurantApp.Data;
 using RestaurantApp.Dtos;
+using RestaurantApp.Helper;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Windows.Data;
+using System.Windows.Input;
 
 namespace RestaurantApp.ViewModels;
 
@@ -11,6 +13,9 @@ public class AllMenuItemsViewModel : WorkspaceViewModel
     private readonly RestaurantDbContext _context = new();
 
     public ObservableCollection<MenuItemListItemDto> MenuItems { get; } = new();
+
+    public event Action? RequestAddMenuItem;
+    public ICommand AddMenuItemCommand { get; }
 
     // To bindujesz do DataGrid
     public ICollectionView MenuItemsView { get; }
@@ -61,12 +66,20 @@ public class AllMenuItemsViewModel : WorkspaceViewModel
     {
         DisplayName = "Menu";
 
+        AddMenuItemCommand = new BaseCommand(() => RequestAddMenuItem?.Invoke());
+
         MenuItemsView = CollectionViewSource.GetDefaultView(MenuItems);
         MenuItemsView.Filter = FilterRow;
 
         LoadMenuItems();
         OnPropertyChanged(() => FilteredCountText);
     }
+
+    public void Refresh()
+    {
+        LoadMenuItems();
+    }
+
 
     private void LoadMenuItems()
     {

@@ -6,6 +6,34 @@
     <Application.Resources>
         <BooleanToVisibilityConverter x:Key="BoolToVis" />
 
+        <Style TargetType="TextBox">
+            <Style.Triggers>
+                <MultiDataTrigger>
+                    <MultiDataTrigger.Conditions>
+                        <Condition Binding="{Binding ShowErrors}" Value="True"/>
+                        <Condition Binding="{Binding RelativeSource={RelativeSource Self}, Path=(Validation.HasError)}" Value="True"/>
+                    </MultiDataTrigger.Conditions>
+                    <Setter Property="BorderBrush" Value="Tomato"/>
+                    <Setter Property="BorderThickness" Value="2"/>
+                </MultiDataTrigger>
+            </Style.Triggers>
+        </Style>
+
+        <Style TargetType="ComboBox">
+            <Style.Triggers>
+                <MultiDataTrigger>
+                    <MultiDataTrigger.Conditions>
+                        <Condition Binding="{Binding ShowErrors}" Value="True"/>
+                        <Condition Binding="{Binding RelativeSource={RelativeSource Self}, Path=(Validation.HasError)}" Value="True"/>
+                    </MultiDataTrigger.Conditions>
+                    <Setter Property="BorderBrush" Value="Tomato"/>
+                    <Setter Property="BorderThickness" Value="2"/>
+                </MultiDataTrigger>
+            </Style.Triggers>
+        </Style>
+
+
+
         <!-- PALETA KOLORÓW -->
         <SolidColorBrush x:Key="PrimaryBrush" Color="#FF34495E" />
         <SolidColorBrush x:Key="PrimaryLightBrush" Color="#FFECF0F1" />

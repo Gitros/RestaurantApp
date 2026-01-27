@@ -3,32 +3,73 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:shared="clr-namespace:RestaurantApp.Views.Shared">
 
-	<shared:ListPageShell Title="Dodaj strefę">
+    <UserControl.Resources>
 
-		<shared:ListPageShell.ToolbarContent>
-			<Button Content="Zapisz"
+        <!-- ErrorTemplate: czerwone obramowanie + tekst błędu pod kontrolką -->
+        <ControlTemplate x:Key="UnderErrorTemplate">
+            <StackPanel>
+                <Border BorderBrush="Tomato"
+                        BorderThickness="2"
+                        CornerRadius="3">
+                    <AdornedElementPlaceholder x:Name="adorner"/>
+                </Border>
+
+                <TextBlock Foreground="Tomato"
+                           FontSize="11"
+                           Margin="2,4,0,0"
+                           Text="{Binding ElementName=adorner,
+                                          Path=AdornedElement.(Validation.Errors)[0].ErrorContent}" />
+            </StackPanel>
+        </ControlTemplate>
+
+        <!-- Bazowy styl dla pól formularza -->
+        <Style x:Key="FormTextBoxStyle" TargetType="TextBox">
+            <Setter Property="Margin" Value="0,4,0,10"/>
+            <Setter Property="Validation.ErrorTemplate" Value="{StaticResource UnderErrorTemplate}"/>
+        </Style>
+
+        <Style x:Key="FormComboBoxStyle" TargetType="ComboBox">
+            <Setter Property="Margin" Value="0,4,0,10"/>
+            <Setter Property="Validation.ErrorTemplate" Value="{StaticResource UnderErrorTemplate}"/>
+        </Style>
+
+    </UserControl.Resources>
+
+    <shared:ListPageShell Title="Dodaj strefę">
+
+        <!-- TOOLBAR -->
+        <shared:ListPageShell.ToolbarContent>
+            <Button Content="Zapisz"
                     Width="120"
                     Command="{Binding SaveCommand}" />
-		</shared:ListPageShell.ToolbarContent>
-		
-		<StackPanel Margin="10" Width="400">
+        </shared:ListPageShell.ToolbarContent>
 
-			<TextBlock Text="Restauracja"/>
-			<ComboBox ItemsSource="{Binding Restaurants}"
-                      SelectedItem="{Binding SelectedRestaurant}"
+        <!-- FORM -->
+        <StackPanel Margin="10" Width="400">
+
+            <TextBlock Text="Restauracja"/>
+            <ComboBox Style="{StaticResource FormComboBoxStyle}"
+                      ItemsSource="{Binding Restaurants}"
                       DisplayMemberPath="Name"
-                      Margin="0,4,0,10"/>
+                      SelectedItem="{Binding SelectedRestaurant,
+                                            UpdateSourceTrigger=PropertyChanged,
+                                            ValidatesOnDataErrors=True}" />
 
-			<TextBlock Text="Nazwa strefy"/>
-			<TextBox Text="{Binding Name, UpdateSourceTrigger=PropertyChanged}"
-                     Margin="0,4,0,10"/>
+            <TextBlock Text="Nazwa strefy"/>
+            <TextBox Style="{StaticResource FormTextBoxStyle}"
+                     Text="{Binding Name,
+                                    UpdateSourceTrigger=PropertyChanged,
+                                    ValidatesOnDataErrors=True}" />
 
-			<TextBlock Text="Opis"/>
-			<TextBox Text="{Binding Description}"
+            <TextBlock Text="Opis"/>
+            <TextBox Style="{StaticResource FormTextBoxStyle}"
+                     Text="{Binding Description,
+                                    UpdateSourceTrigger=PropertyChanged,
+                                    ValidatesOnDataErrors=True}"
                      AcceptsReturn="True"
-                     Height="80"/>
+                     Height="80" />
 
-		</StackPanel>
+        </StackPanel>
 
-	</shared:ListPageShell>
+    </shared:ListPageShell>
 </UserControl>

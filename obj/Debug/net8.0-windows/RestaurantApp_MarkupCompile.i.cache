@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP;WINDOWS;WINDOWS7_0;NET5_0_OR_GREATER;NET6_0_OR_GREATER;NET7_0_OR_GREATER;NET8_0_OR_GREATER;NETCOREAPP3_0_OR_GREATER;NETCOREAPP3_1_OR_GREATER;WINDOWS7_0_OR_GREATER
 C:\Users\jakub\Desktop\programowanie desktopowych aplikacji biznesowych\Projekt1\RestaurantApp\App.xaml
-17623773971
+18-1088915685
 
-701721875051
+73447907929
 239759716430
-MainWindow.xaml;Views\Areas\AddAreaView.xaml;Views\Areas\AllAreasView.xaml;Views\Customers\AllCustomersView.xaml;Views\Ingredients\AllIngredientsView.xaml;Views\MenuItems\AllMenuItemsView.xaml;Views\Orders\AddOrderView.xaml;Views\Orders\AllOrdersView.xaml;Views\Payment\AllPaymentsView.xaml;Views\Report\DailySalesReportView.xaml;Views\Report\TableUsageReportView.xaml;Views\Report\TopMenuItemsReportView.xaml;Views\Reservations\AllReservationsView.xaml;Views\Shared\ListPageShell.xaml;Views\Tables\AddTableView.xaml;Views\Tables\AllTablesView.xaml;Views\Waiter\AllWaitersView.xaml;
+MainWindow.xaml;Views\Areas\AddAreaView.xaml;Views\Areas\AllAreasView.xaml;Views\Customers\AllCustomersView.xaml;Views\Ingredients\AllIngredientsView.xaml;Views\MenuItems\AddMenuItemView.xaml;Views\MenuItems\AllMenuItemsView.xaml;Views\Orders\AddOrderView.xaml;Views\Orders\AllOrdersView.xaml;Views\Payment\AllPaymentsView.xaml;Views\Report\DailySalesReportView.xaml;Views\Report\TableUsageReportView.xaml;Views\Report\TopMenuItemsReportView.xaml;Views\Reservations\AllReservationsView.xaml;Views\Shared\ListPageShell.xaml;Views\Tables\AddTableView.xaml;Views\Tables\AllTablesView.xaml;Views\Waiter\AllWaitersView.xaml;
 
 False
 

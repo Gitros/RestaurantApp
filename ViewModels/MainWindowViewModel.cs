@@ -282,9 +282,7 @@ public class MainWindowViewModel : BaseViewModel
 
     private void ShowAllMenuItems()
     {
-        AllMenuItemsViewModel workspace =
-            this.Workspaces.FirstOrDefault(vm => vm is AllMenuItemsViewModel)
-            as AllMenuItemsViewModel;
+        var workspace = this.Workspaces.OfType<AllMenuItemsViewModel>().FirstOrDefault();
 
         if (workspace == null)
         {
@@ -292,8 +290,33 @@ public class MainWindowViewModel : BaseViewModel
             this.Workspaces.Add(workspace);
         }
 
+        workspace.RequestAddMenuItem -= this.ShowAddMenuItem;
+        workspace.RequestAddMenuItem += this.ShowAddMenuItem;
+
         this.SetActiveWorkspace(workspace);
     }
+
+    private void ShowAddMenuItem()
+    {
+        var workspace = this.Workspaces.OfType<AddMenuItemViewModel>().FirstOrDefault();
+
+        if (workspace == null)
+        {
+            workspace = new AddMenuItemViewModel();
+
+            workspace.MenuItemSaved += () =>
+            {
+                var menuVm = this.Workspaces.OfType<AllMenuItemsViewModel>().FirstOrDefault();
+                menuVm?.Refresh();
+            };
+
+            this.Workspaces.Add(workspace);
+        }
+
+        this.SetActiveWorkspace(workspace);
+    }
+
+
 
     private void ShowAllReservations()
     {

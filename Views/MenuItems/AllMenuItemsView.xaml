@@ -22,29 +22,37 @@
                     <ColumnDefinition Width="12"/>
                     <ColumnDefinition Width="140"/>
                     <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="140"/>
                 </Grid.ColumnDefinitions>
 
                 <!-- Szukaj po nazwie -->
                 <TextBox Grid.Column="0"
-                         Height="28"
-                         VerticalContentAlignment="Center"
-                         Text="{Binding SearchText, UpdateSourceTrigger=PropertyChanged}"
-                         ToolTip="Szukaj po nazwie"/>
+                 Height="28"
+                 VerticalContentAlignment="Center"
+                 Text="{Binding SearchText, UpdateSourceTrigger=PropertyChanged}"
+                 ToolTip="Szukaj po nazwie"/>
 
-                <!-- Filtr po kategorii (po nazwie) -->
+                <!-- Filtr po kategorii -->
                 <TextBox Grid.Column="2"
-                         Height="28"
-                         VerticalContentAlignment="Center"
-                         Text="{Binding CategoryFilter, UpdateSourceTrigger=PropertyChanged}"
-                         ToolTip="Filtr po kategorii"/>
+                 Height="28"
+                 VerticalContentAlignment="Center"
+                 Text="{Binding CategoryFilter, UpdateSourceTrigger=PropertyChanged}"
+                 ToolTip="Filtr po kategorii"/>
 
                 <!-- Tylko aktywne -->
                 <CheckBox Grid.Column="4"
-                          Content="Tylko aktywne"
-                          VerticalAlignment="Center"
-                          IsChecked="{Binding OnlyActive}"/>
+                  Content="Tylko aktywne"
+                  VerticalAlignment="Center"
+                  IsChecked="{Binding OnlyActive}"/>
+
+                <!-- Dodaj pozycję -->
+                <Button Grid.Column="6"
+                Content="Dodaj pozycję"
+                Width="140"
+                Command="{Binding AddMenuItemCommand}" />
             </Grid>
         </shared:ListPageShell.ToolbarContent>
+
 
         <!-- LISTA -->
         <DataGrid ItemsSource="{Binding MenuItemsView}"
