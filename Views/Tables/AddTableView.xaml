@@ -1,0 +1,37 @@
+﻿<UserControl x:Class="RestaurantApp.Views.AddTableView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:shared="clr-namespace:RestaurantApp.Views.Shared">
+
+    <shared:ListPageShell Title="Dodaj stolik">
+
+        <shared:ListPageShell.ToolbarContent>
+            <Button Content="Zapisz"
+                    Width="120"
+                    Command="{Binding SaveCommand}" />
+        </shared:ListPageShell.ToolbarContent>
+
+        <StackPanel Margin="10" Width="420">
+
+            <TextBlock Text="Strefa" />
+            <ComboBox ItemsSource="{Binding Areas}"
+                      SelectedItem="{Binding SelectedArea}"
+                      DisplayMemberPath="Name"
+                      Margin="0,4,0,10" />
+
+            <TextBlock Text="Nazwa stolika" />
+            <TextBox Text="{Binding Name, UpdateSourceTrigger=PropertyChanged}"
+                     Margin="0,4,0,10" />
+
+            <TextBlock Text="Liczba miejsc" />
+            <TextBox Text="{Binding SeatsCount, UpdateSourceTrigger=PropertyChanged}"
+                     Margin="0,4,0,10" />
+
+            <CheckBox Content="Aktywny"
+                      IsChecked="{Binding IsActive}"
+                      Margin="0,4,0,0" />
+
+        </StackPanel>
+
+    </shared:ListPageShell>
+</UserControl>

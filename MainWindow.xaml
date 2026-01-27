@@ -33,6 +33,11 @@
         <DataTemplate DataType="{x:Type vm:AllTablesViewModel}">
             <views:AllTablesView />
         </DataTemplate>
+        
+        <DataTemplate DataType="{x:Type vm:AddTableViewModel}">
+            <views:AddTableView />
+        </DataTemplate>
+
 
         <DataTemplate DataType="{x:Type vm:AllMenuItemsViewModel}">
             <views:AllMenuItemsView />

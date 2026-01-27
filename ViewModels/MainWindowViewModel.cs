@@ -245,9 +245,7 @@ public class MainWindowViewModel : BaseViewModel
 
     private void ShowAllTables()
     {
-        AllTablesViewModel workspace =
-            this.Workspaces.FirstOrDefault(vm => vm is AllTablesViewModel)
-            as AllTablesViewModel;
+        var workspace = this.Workspaces.OfType<AllTablesViewModel>().FirstOrDefault();
 
         if (workspace == null)
         {
@@ -255,8 +253,32 @@ public class MainWindowViewModel : BaseViewModel
             this.Workspaces.Add(workspace);
         }
 
+        workspace.RequestAddTable -= this.ShowAddTable;
+        workspace.RequestAddTable += this.ShowAddTable;
+
         this.SetActiveWorkspace(workspace);
     }
+
+    private void ShowAddTable()
+    {
+        var workspace = this.Workspaces.OfType<AddTableViewModel>().FirstOrDefault();
+
+        if (workspace == null)
+        {
+            workspace = new AddTableViewModel();
+
+            workspace.TableSaved += () =>
+            {
+                var tablesVm = this.Workspaces.OfType<AllTablesViewModel>().FirstOrDefault();
+                tablesVm?.Refresh();
+            };
+
+            this.Workspaces.Add(workspace);
+        }
+
+        this.SetActiveWorkspace(workspace);
+    }
+
 
     private void ShowAllMenuItems()
     {

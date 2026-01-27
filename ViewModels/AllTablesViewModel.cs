@@ -1,7 +1,8 @@
 ﻿using RestaurantApp.Data;
-using RestaurantApp.Entities;
+using RestaurantApp.Dtos;
+using RestaurantApp.Helper;
 using System.Collections.ObjectModel;
-using System.Linq;
+using System.Windows.Input;
 
 namespace RestaurantApp.ViewModels;
 
@@ -9,11 +10,15 @@ public class AllTablesViewModel : WorkspaceViewModel
 {
     private readonly RestaurantDbContext _context = new();
 
-    public ObservableCollection<RestaurantTable> Tables { get; } = new();
+    public ObservableCollection<TableListItemDto> Tables { get; } = new();
+
+    public event Action? RequestAddTable;
+    public ICommand AddTableCommand { get; }
 
     public AllTablesViewModel()
     {
-        base.DisplayName = "Stoliki";
+        DisplayName = "Stoliki";
+        AddTableCommand = new BaseCommand(() => RequestAddTable?.Invoke());
         LoadTables();
     }
 
@@ -23,9 +28,20 @@ public class AllTablesViewModel : WorkspaceViewModel
 
         var data = _context.Tables
             .OrderBy(t => t.TableId)
+            .Select(t => new TableListItemDto
+            {
+                TableId = t.TableId,
+                Name = t.Name,
+                SeatsCount = t.SeatsCount,
+                IsActive = t.IsActive,
+                AreaId = t.AreaId,
+                AreaName = t.Area.Name
+            })
             .ToList();
 
-        foreach (var t in data)
-            Tables.Add(t);
+        foreach (var row in data)
+            Tables.Add(row);
     }
+
+    public void Refresh() => LoadTables();
 }
