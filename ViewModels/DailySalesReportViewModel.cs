@@ -64,6 +64,33 @@ public class DailySalesReportViewModel : WorkspaceViewModel
         Load(DateFrom, DateTo);
     }
 
+    private DailySalesReportRowDto? _selectedRow;
+    public DailySalesReportRowDto? SelectedRow
+    {
+        get => _selectedRow;
+        set
+        {
+            _selectedRow = value;
+            OnPropertyChanged(() => SelectedRow);
+            OnPropertyChanged(() => SelectedDateText);
+            OnPropertyChanged(() => SelectedOrdersText);
+            OnPropertyChanged(() => SelectedRevenueText);
+            OnPropertyChanged(() => SelectedAvgText);
+        }
+    }
+
+    // PODSUMOWANIA
+    public decimal TotalRevenue => Rows.Sum(r => r.Revenue);
+    public int TotalOrders => Rows.Sum(r => r.OrdersCount);
+    public decimal AvgOrderValueAll => TotalOrders == 0 ? 0 : TotalRevenue / TotalOrders;
+    public decimal AvgDailyRevenue => Rows.Count == 0 ? 0 : TotalRevenue / Rows.Count;
+
+    public string SelectedDateText => SelectedRow == null ? "-" : SelectedRow.Date.ToString("yyyy-MM-dd");
+    public string SelectedOrdersText => SelectedRow == null ? "-" : SelectedRow.OrdersCount.ToString();
+    public string SelectedRevenueText => SelectedRow == null ? "-" : SelectedRow.Revenue.ToString("C");
+    public string SelectedAvgText => SelectedRow == null ? "-" : SelectedRow.AvgOrderValue.ToString("C");
+
+
     private void Load(DateTime from, DateTime to)
     {
         Rows.Clear();
@@ -91,5 +118,14 @@ public class DailySalesReportViewModel : WorkspaceViewModel
 
         foreach (var row in data)
             Rows.Add(row);
+
+        OnPropertyChanged(() => TotalRevenue);
+        OnPropertyChanged(() => TotalOrders);
+        OnPropertyChanged(() => AvgOrderValueAll);
+        OnPropertyChanged(() => AvgDailyRevenue);
+
+        SelectedRow = Rows.FirstOrDefault();
     }
+
+
 }

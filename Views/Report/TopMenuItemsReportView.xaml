@@ -3,20 +3,171 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:shared="clr-namespace:RestaurantApp.Views.Shared">
 
-    <shared:ListPageShell Title="Raport: TOP pozycje menu"
+	<shared:ListPageShell Title="Raport: TOP pozycje menu"
                           CountText="{Binding Rows.Count, StringFormat='Pozycji w TOP: {0}'}">
 
-        <DataGrid ItemsSource="{Binding Rows}" IsReadOnly="True">
-            <DataGrid.Columns>
-                <DataGridTextColumn Header="ID" Binding="{Binding MenuItemId}" Width="70"/>
-                <DataGridTextColumn Header="Pozycja" Binding="{Binding MenuItemName}" Width="*"/>
-                <DataGridTextColumn Header="Kategoria" Binding="{Binding CategoryName}" Width="*"/>
-                <DataGridTextColumn Header="Sprzedano" Binding="{Binding QuantitySold}" Width="100"/>
-                <DataGridTextColumn Header="Przychód"
-                                    Binding="{Binding Revenue, StringFormat=\{0:C\}}"
-                                    Width="140"/>
-            </DataGrid.Columns>
-        </DataGrid>
+		<!-- TOOLBAR (filtry) -->
+		<shared:ListPageShell.ToolbarContent>
+			<Grid>
+				<Grid.ColumnDefinitions>
+					<ColumnDefinition Width="Auto"/>
+					<ColumnDefinition Width="150"/>
+					<ColumnDefinition Width="12"/>
 
-    </shared:ListPageShell>
+					<ColumnDefinition Width="Auto"/>
+					<ColumnDefinition Width="150"/>
+					<ColumnDefinition Width="18"/>
+
+					<ColumnDefinition Width="Auto"/>
+					<ColumnDefinition Width="90"/>
+					<ColumnDefinition Width="*"/>
+
+					<ColumnDefinition Width="120"/>
+					<ColumnDefinition Width="10"/>
+					<ColumnDefinition Width="120"/>
+				</Grid.ColumnDefinitions>
+
+				<TextBlock Text="Od:" VerticalAlignment="Center" Margin="0,0,6,0"/>
+				<DatePicker Grid.Column="1" SelectedDate="{Binding DateFrom}" />
+
+				<TextBlock Grid.Column="3" Text="Do:" VerticalAlignment="Center" Margin="0,0,6,0"/>
+				<DatePicker Grid.Column="4" SelectedDate="{Binding DateTo}" />
+
+				<TextBlock Grid.Column="6" Text="Top:" VerticalAlignment="Center" Margin="0,0,6,0"/>
+				<TextBox Grid.Column="7"
+                         Height="28"
+                         VerticalContentAlignment="Center"
+                         Text="{Binding TopN, UpdateSourceTrigger=PropertyChanged}" />
+
+				<Button Grid.Column="9"
+                        Content="Filtruj"
+                        Command="{Binding FilterCommand}"
+                        Width="120"/>
+
+				<Button Grid.Column="11"
+                        Content="Reset"
+                        Command="{Binding ResetCommand}"
+                        Width="120"/>
+			</Grid>
+		</shared:ListPageShell.ToolbarContent>
+
+		<!-- CONTENT -->
+		<Grid>
+			<Grid.RowDefinitions>
+				<RowDefinition Height="Auto"/>
+				<RowDefinition Height="*"/>
+			</Grid.RowDefinitions>
+
+			<!-- KAFELKI -->
+			<UniformGrid Grid.Row="0" Columns="3" Margin="0,0,0,10">
+				<Border Margin="0,0,10,0"
+                        Padding="10"
+                        CornerRadius="8"
+                        Background="#FFF7F7F7"
+                        BorderBrush="#22000000"
+                        BorderThickness="1">
+					<StackPanel>
+						<TextBlock Text="Suma przychodu (TOP)" Foreground="Gray"/>
+						<TextBlock Text="{Binding TotalRevenue, StringFormat={}{0:C}}"
+                                   FontSize="18"
+                                   FontWeight="SemiBold"/>
+					</StackPanel>
+				</Border>
+
+				<Border Margin="0,0,10,0"
+                        Padding="10"
+                        CornerRadius="8"
+                        Background="#FFF7F7F7"
+                        BorderBrush="#22000000"
+                        BorderThickness="1">
+					<StackPanel>
+						<TextBlock Text="Sprzedane sztuki (TOP)" Foreground="Gray"/>
+						<TextBlock Text="{Binding TotalQty}"
+                                   FontSize="18"
+                                   FontWeight="SemiBold"/>
+					</StackPanel>
+				</Border>
+
+				<Border Padding="10"
+                        CornerRadius="8"
+                        Background="#FFF7F7F7"
+                        BorderBrush="#22000000"
+                        BorderThickness="1">
+					<StackPanel>
+						<TextBlock Text="Zakres dat" Foreground="Gray"/>
+						<TextBlock FontSize="14" FontWeight="SemiBold">
+							<Run Text="{Binding DateFrom, StringFormat={}{0:yyyy-MM-dd}}"/>
+							<Run Text="  —  "/>
+							<Run Text="{Binding DateTo, StringFormat={}{0:yyyy-MM-dd}}"/>
+						</TextBlock>
+					</StackPanel>
+				</Border>
+			</UniformGrid>
+
+			<!-- DATA + SZCZEGÓŁY -->
+			<Grid Grid.Row="1">
+				<Grid.ColumnDefinitions>
+					<ColumnDefinition Width="3*"/>
+					<ColumnDefinition Width="16"/>
+					<ColumnDefinition Width="2*"/>
+				</Grid.ColumnDefinitions>
+
+				<DataGrid Grid.Column="0"
+                          ItemsSource="{Binding Rows}"
+                          SelectedItem="{Binding SelectedRow}"
+                          IsReadOnly="True"
+                          CanUserSortColumns="True">
+					<DataGrid.Columns>
+						<DataGridTextColumn Header="ID" Binding="{Binding MenuItemId}" Width="70"/>
+						<DataGridTextColumn Header="Pozycja" Binding="{Binding MenuItemName}" Width="*"/>
+						<DataGridTextColumn Header="Kategoria" Binding="{Binding CategoryName}" Width="*"/>
+						<DataGridTextColumn Header="Sprzedano" Binding="{Binding QuantitySold}" Width="100"/>
+						<DataGridTextColumn Header="Przychód"
+                                            Binding="{Binding Revenue, StringFormat=\{0:C\}}"
+                                            Width="140"/>
+					</DataGrid.Columns>
+				</DataGrid>
+
+				<Border Grid.Column="2"
+                        Padding="12"
+                        CornerRadius="8"
+                        Background="#FFF7F7F7"
+                        BorderBrush="#22000000"
+                        BorderThickness="1">
+					<StackPanel>
+						<TextBlock Text="Szczegóły pozycji"
+                                   FontSize="16"
+                                   FontWeight="SemiBold"
+                                   Margin="0,0,0,10"/>
+
+						<TextBlock Text="Nazwa" Foreground="Gray"/>
+						<TextBlock Text="{Binding SelectedRow.MenuItemName}"
+                                   FontSize="14"
+                                   Margin="0,0,0,8"/>
+
+						<TextBlock Text="Kategoria" Foreground="Gray"/>
+						<TextBlock Text="{Binding SelectedRow.CategoryName}"
+                                   FontSize="14"
+                                   Margin="0,0,0,8"/>
+
+						<TextBlock Text="Sprzedano" Foreground="Gray"/>
+						<TextBlock Text="{Binding SelectedRow.QuantitySold}"
+                                   FontSize="14"
+                                   Margin="0,0,0,8"/>
+
+						<TextBlock Text="Przychód" Foreground="Gray"/>
+						<TextBlock Text="{Binding SelectedRow.Revenue, StringFormat={}{0:C}}"
+                                   FontSize="14"
+                                   Margin="0,0,0,8"/>
+
+						<TextBlock Text="Udział w przychodzie TOP" Foreground="Gray"/>
+						<TextBlock Text="{Binding SelectedShareText}"
+                                   FontSize="14"
+                                   FontWeight="SemiBold"/>
+					</StackPanel>
+				</Border>
+			</Grid>
+		</Grid>
+
+	</shared:ListPageShell>
 </UserControl>

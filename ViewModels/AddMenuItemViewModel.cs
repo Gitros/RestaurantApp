@@ -103,7 +103,6 @@ public class AddMenuItemViewModel : ValidatableViewModel
     {
         ShowErrors = true;
 
-        // wymuś „przeliczenie” błędów w UI
         OnPropertyChanged(() => SelectedCategory);
         OnPropertyChanged(() => Name);
         OnPropertyChanged(() => Description);
@@ -134,7 +133,6 @@ public class AddMenuItemViewModel : ValidatableViewModel
     {
         text = (text ?? "").Trim();
 
-        // pozwól na 12.50 i 12,50
         text = text.Replace(',', '.');
 
         decimal.TryParse(text, NumberStyles.Number, CultureInfo.InvariantCulture, out var value);

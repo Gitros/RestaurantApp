@@ -3,20 +3,72 @@
   "WorkspaceRootPath": "C:\\Users\\jakub\\Desktop\\programowanie desktopowych aplikacji biznesowych\\Projekt1\\RestaurantApp\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E7C655E8-C34D-483C-B252-738AA78F4957}|RestaurantApp.csproj|c:\\users\\jakub\\desktop\\programowanie desktopowych aplikacji biznesowych\\projekt1\\restaurantapp\\views\\menuitems\\addmenuitemview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E7C655E8-C34D-483C-B252-738AA78F4957}|RestaurantApp.csproj|solutionrelative:views\\menuitems\\addmenuitemview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E7C655E8-C34D-483C-B252-738AA78F4957}|RestaurantApp.csproj|c:\\users\\jakub\\desktop\\programowanie desktopowych aplikacji biznesowych\\projekt1\\restaurantapp\\viewmodels\\tableusagereportviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7C655E8-C34D-483C-B252-738AA78F4957}|RestaurantApp.csproj|solutionrelative:viewmodels\\tableusagereportviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7C655E8-C34D-483C-B252-738AA78F4957}|RestaurantApp.csproj|c:\\users\\jakub\\desktop\\programowanie desktopowych aplikacji biznesowych\\projekt1\\restaurantapp\\views\\report\\tableusagereportview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{E7C655E8-C34D-483C-B252-738AA78F4957}|RestaurantApp.csproj|solutionrelative:views\\report\\tableusagereportview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7C655E8-C34D-483C-B252-738AA78F4957}|RestaurantApp.csproj|c:\\users\\jakub\\desktop\\programowanie desktopowych aplikacji biznesowych\\projekt1\\restaurantapp\\viewmodels\\topmenuitemsreportviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7C655E8-C34D-483C-B252-738AA78F4957}|RestaurantApp.csproj|solutionrelative:viewmodels\\topmenuitemsreportviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7C655E8-C34D-483C-B252-738AA78F4957}|RestaurantApp.csproj|c:\\users\\jakub\\desktop\\programowanie desktopowych aplikacji biznesowych\\projekt1\\restaurantapp\\views\\report\\dailysalesreportview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{E7C655E8-C34D-483C-B252-738AA78F4957}|RestaurantApp.csproj|solutionrelative:views\\report\\dailysalesreportview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7C655E8-C34D-483C-B252-738AA78F4957}|RestaurantApp.csproj|c:\\users\\jakub\\desktop\\programowanie desktopowych aplikacji biznesowych\\projekt1\\restaurantapp\\viewmodels\\dailysalesreportviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7C655E8-C34D-483C-B252-738AA78F4957}|RestaurantApp.csproj|solutionrelative:viewmodels\\dailysalesreportviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7C655E8-C34D-483C-B252-738AA78F4957}|RestaurantApp.csproj|c:\\users\\jakub\\desktop\\programowanie desktopowych aplikacji biznesowych\\projekt1\\restaurantapp\\views\\report\\topmenuitemsreportview.xaml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{E7C655E8-C34D-483C-B252-738AA78F4957}|RestaurantApp.csproj|solutionrelative:views\\report\\topmenuitemsreportview.xaml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7C655E8-C34D-483C-B252-738AA78F4957}|RestaurantApp.csproj|c:\\users\\jakub\\desktop\\programowanie desktopowych aplikacji biznesowych\\projekt1\\restaurantapp\\views\\report\\tableusagereportview.xaml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{E7C655E8-C34D-483C-B252-738AA78F4957}|RestaurantApp.csproj|solutionrelative:views\\report\\tableusagereportview.xaml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7C655E8-C34D-483C-B252-738AA78F4957}|RestaurantApp.csproj|c:\\users\\jakub\\desktop\\programowanie desktopowych aplikacji biznesowych\\projekt1\\restaurantapp\\views\\report\\dailysalesreportview.xaml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{E7C655E8-C34D-483C-B252-738AA78F4957}|RestaurantApp.csproj|solutionrelative:views\\report\\dailysalesreportview.xaml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7C655E8-C34D-483C-B252-738AA78F4957}|RestaurantApp.csproj|c:\\users\\jakub\\desktop\\programowanie desktopowych aplikacji biznesowych\\projekt1\\restaurantapp\\dtos\\topmenuitemsreportrowdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7C655E8-C34D-483C-B252-738AA78F4957}|RestaurantApp.csproj|solutionrelative:dtos\\topmenuitemsreportrowdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7C655E8-C34D-483C-B252-738AA78F4957}|RestaurantApp.csproj|c:\\users\\jakub\\desktop\\programowanie desktopowych aplikacji biznesowych\\projekt1\\restaurantapp\\dtos\\tableusagereportrowdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7C655E8-C34D-483C-B252-738AA78F4957}|RestaurantApp.csproj|solutionrelative:dtos\\tableusagereportrowdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7C655E8-C34D-483C-B252-738AA78F4957}|RestaurantApp.csproj|c:\\users\\jakub\\desktop\\programowanie desktopowych aplikacji biznesowych\\projekt1\\restaurantapp\\dtos\\dailysalesreportrowdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7C655E8-C34D-483C-B252-738AA78F4957}|RestaurantApp.csproj|solutionrelative:dtos\\dailysalesreportrowdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E7C655E8-C34D-483C-B252-738AA78F4957}|RestaurantApp.csproj|c:\\users\\jakub\\desktop\\programowanie desktopowych aplikacji biznesowych\\projekt1\\restaurantapp\\viewmodels\\addmenuitemviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E7C655E8-C34D-483C-B252-738AA78F4957}|RestaurantApp.csproj|solutionrelative:viewmodels\\addmenuitemviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E7C655E8-C34D-483C-B252-738AA78F4957}|RestaurantApp.csproj|c:\\users\\jakub\\desktop\\programowanie desktopowych aplikacji biznesowych\\projekt1\\restaurantapp\\views\\areas\\addareaview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{E7C655E8-C34D-483C-B252-738AA78F4957}|RestaurantApp.csproj|solutionrelative:views\\areas\\addareaview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{E7C655E8-C34D-483C-B252-738AA78F4957}|RestaurantApp.csproj|c:\\users\\jakub\\desktop\\programowanie desktopowych aplikacji biznesowych\\projekt1\\restaurantapp\\viewmodels\\validatableviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7C655E8-C34D-483C-B252-738AA78F4957}|RestaurantApp.csproj|solutionrelative:viewmodels\\validatableviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E7C655E8-C34D-483C-B252-738AA78F4957}|RestaurantApp.csproj|c:\\users\\jakub\\desktop\\programowanie desktopowych aplikacji biznesowych\\projekt1\\restaurantapp\\viewmodels\\addareaviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E7C655E8-C34D-483C-B252-738AA78F4957}|RestaurantApp.csproj|solutionrelative:viewmodels\\addareaviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7C655E8-C34D-483C-B252-738AA78F4957}|RestaurantApp.csproj|c:\\users\\jakub\\desktop\\programowanie desktopowych aplikacji biznesowych\\projekt1\\restaurantapp\\views\\menuitems\\addmenuitemview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{E7C655E8-C34D-483C-B252-738AA78F4957}|RestaurantApp.csproj|solutionrelative:views\\menuitems\\addmenuitemview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7C655E8-C34D-483C-B252-738AA78F4957}|RestaurantApp.csproj|c:\\users\\jakub\\desktop\\programowanie desktopowych aplikacji biznesowych\\projekt1\\restaurantapp\\views\\menuitems\\addmenuitemview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7C655E8-C34D-483C-B252-738AA78F4957}|RestaurantApp.csproj|solutionrelative:views\\menuitems\\addmenuitemview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7C655E8-C34D-483C-B252-738AA78F4957}|RestaurantApp.csproj|c:\\users\\jakub\\desktop\\programowanie desktopowych aplikacji biznesowych\\projekt1\\restaurantapp\\views\\areas\\addareaview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{E7C655E8-C34D-483C-B252-738AA78F4957}|RestaurantApp.csproj|solutionrelative:views\\areas\\addareaview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E7C655E8-C34D-483C-B252-738AA78F4957}|RestaurantApp.csproj|c:\\users\\jakub\\desktop\\programowanie desktopowych aplikacji biznesowych\\projekt1\\restaurantapp\\views\\areas\\addareaview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -49,10 +101,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{E7C655E8-C34D-483C-B252-738AA78F4957}|RestaurantApp.csproj|c:\\users\\jakub\\desktop\\programowanie desktopowych aplikacji biznesowych\\projekt1\\restaurantapp\\views\\tables\\alltablesview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{E7C655E8-C34D-483C-B252-738AA78F4957}|RestaurantApp.csproj|solutionrelative:views\\tables\\alltablesview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E7C655E8-C34D-483C-B252-738AA78F4957}|RestaurantApp.csproj|c:\\users\\jakub\\desktop\\programowanie desktopowych aplikacji biznesowych\\projekt1\\restaurantapp\\viewmodels\\validatableviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E7C655E8-C34D-483C-B252-738AA78F4957}|RestaurantApp.csproj|solutionrelative:viewmodels\\validatableviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E7C655E8-C34D-483C-B252-738AA78F4957}|RestaurantApp.csproj|c:\\users\\jakub\\desktop\\programowanie desktopowych aplikacji biznesowych\\projekt1\\restaurantapp\\viewmodels\\allmenuitemsviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -109,10 +157,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{E7C655E8-C34D-483C-B252-738AA78F4957}|RestaurantApp.csproj|c:\\users\\jakub\\desktop\\programowanie desktopowych aplikacji biznesowych\\projekt1\\restaurantapp\\viewmodels\\allareasviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E7C655E8-C34D-483C-B252-738AA78F4957}|RestaurantApp.csproj|solutionrelative:viewmodels\\allareasviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E7C655E8-C34D-483C-B252-738AA78F4957}|RestaurantApp.csproj|c:\\users\\jakub\\desktop\\programowanie desktopowych aplikacji biznesowych\\projekt1\\restaurantapp\\viewmodels\\tableusagereportviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E7C655E8-C34D-483C-B252-738AA78F4957}|RestaurantApp.csproj|solutionrelative:viewmodels\\tableusagereportviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E7C655E8-C34D-483C-B252-738AA78F4957}|RestaurantApp.csproj|c:\\users\\jakub\\desktop\\programowanie desktopowych aplikacji biznesowych\\projekt1\\restaurantapp\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -182,92 +226,222 @@
       "DocumentGroups": [
         {
           "DockedWidth": 411,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 9,
           "Children": [
             {
+              "$type": "Bookmark",
+              "Name": "ST:844521608:0:{bf84ea66-d821-4dba-b1b1-2777d8574775}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:2064750209:0:{bf84ea66-d821-4dba-b1b1-2777d8574775}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:2125798652:0:{bf84ea66-d821-4dba-b1b1-2777d8574775}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:50220305:0:{bf84ea66-d821-4dba-b1b1-2777d8574775}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:819050858:0:{bf84ea66-d821-4dba-b1b1-2777d8574775}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:48095062:0:{bf84ea66-d821-4dba-b1b1-2777d8574775}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e1b7d1f8-9b3c-49b1-8f4f-bfc63a88835d}"
+            },
+            {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "AddTableView.xaml",
-              "DocumentMoniker": "C:\\Users\\jakub\\Desktop\\programowanie desktopowych aplikacji biznesowych\\Projekt1\\RestaurantApp\\Views\\Tables\\AddTableView.xaml",
-              "RelativeDocumentMoniker": "Views\\Tables\\AddTableView.xaml",
-              "ToolTip": "C:\\Users\\jakub\\Desktop\\programowanie desktopowych aplikacji biznesowych\\Projekt1\\RestaurantApp\\Views\\Tables\\AddTableView.xaml",
-              "RelativeToolTip": "Views\\Tables\\AddTableView.xaml",
+              "DocumentIndex": 1,
+              "Title": "TableUsageReportView.xaml",
+              "DocumentMoniker": "C:\\Users\\jakub\\Desktop\\programowanie desktopowych aplikacji biznesowych\\Projekt1\\RestaurantApp\\Views\\Report\\TableUsageReportView.xaml",
+              "RelativeDocumentMoniker": "Views\\Report\\TableUsageReportView.xaml",
+              "ToolTip": "C:\\Users\\jakub\\Desktop\\programowanie desktopowych aplikacji biznesowych\\Projekt1\\RestaurantApp\\Views\\Report\\TableUsageReportView.xaml",
+              "RelativeToolTip": "Views\\Report\\TableUsageReportView.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-01-27T15:14:14.399Z"
+              "WhenOpened": "2026-01-29T14:13:25.947Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "TableUsageReportViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\jakub\\Desktop\\programowanie desktopowych aplikacji biznesowych\\Projekt1\\RestaurantApp\\ViewModels\\TableUsageReportViewModel.cs",
+              "RelativeDocumentMoniker": "ViewModels\\TableUsageReportViewModel.cs",
+              "ToolTip": "C:\\Users\\jakub\\Desktop\\programowanie desktopowych aplikacji biznesowych\\Projekt1\\RestaurantApp\\ViewModels\\TableUsageReportViewModel.cs",
+              "RelativeToolTip": "ViewModels\\TableUsageReportViewModel.cs",
+              "ViewState": "AgIAAEkAAAAAAAAAAAAawE8AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-07T15:41:55.692Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "TableUsageReportView.xaml",
+              "DocumentMoniker": "C:\\Users\\jakub\\Desktop\\programowanie desktopowych aplikacji biznesowych\\Projekt1\\RestaurantApp\\Views\\Report\\TableUsageReportView.xaml",
+              "RelativeDocumentMoniker": "Views\\Report\\TableUsageReportView.xaml",
+              "ToolTip": "C:\\Users\\jakub\\Desktop\\programowanie desktopowych aplikacji biznesowych\\Projekt1\\RestaurantApp\\Views\\Report\\TableUsageReportView.xaml",
+              "RelativeToolTip": "Views\\Report\\TableUsageReportView.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAANUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-01-29T13:56:12.697Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
-              "Title": "MainWindowViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\jakub\\Desktop\\programowanie desktopowych aplikacji biznesowych\\Projekt1\\RestaurantApp\\ViewModels\\MainWindowViewModel.cs",
-              "RelativeDocumentMoniker": "ViewModels\\MainWindowViewModel.cs",
-              "ToolTip": "C:\\Users\\jakub\\Desktop\\programowanie desktopowych aplikacji biznesowych\\Projekt1\\RestaurantApp\\ViewModels\\MainWindowViewModel.cs",
-              "RelativeToolTip": "ViewModels\\MainWindowViewModel.cs",
-              "ViewState": "AgIAANAAAAAAAAAAAAAIwIgBAAAeAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-19T16:51:18.27Z"
+              "Title": "DailySalesReportView.xaml",
+              "DocumentMoniker": "C:\\Users\\jakub\\Desktop\\programowanie desktopowych aplikacji biznesowych\\Projekt1\\RestaurantApp\\Views\\Report\\DailySalesReportView.xaml",
+              "RelativeDocumentMoniker": "Views\\Report\\DailySalesReportView.xaml",
+              "ToolTip": "C:\\Users\\jakub\\Desktop\\programowanie desktopowych aplikacji biznesowych\\Projekt1\\RestaurantApp\\Views\\Report\\DailySalesReportView.xaml",
+              "RelativeToolTip": "Views\\Report\\DailySalesReportView.xaml",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAgwFkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-01-29T13:56:07.197Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "App.xaml",
-              "DocumentMoniker": "C:\\Users\\jakub\\Desktop\\programowanie desktopowych aplikacji biznesowych\\Projekt1\\RestaurantApp\\App.xaml",
-              "RelativeDocumentMoniker": "App.xaml",
-              "ToolTip": "C:\\Users\\jakub\\Desktop\\programowanie desktopowych aplikacji biznesowych\\Projekt1\\RestaurantApp\\App.xaml",
-              "RelativeToolTip": "App.xaml",
+              "Title": "TopMenuItemsReportView.xaml",
+              "DocumentMoniker": "C:\\Users\\jakub\\Desktop\\programowanie desktopowych aplikacji biznesowych\\Projekt1\\RestaurantApp\\Views\\Report\\TopMenuItemsReportView.xaml",
+              "RelativeDocumentMoniker": "Views\\Report\\TopMenuItemsReportView.xaml",
+              "ToolTip": "C:\\Users\\jakub\\Desktop\\programowanie desktopowych aplikacji biznesowych\\Projekt1\\RestaurantApp\\Views\\Report\\TopMenuItemsReportView.xaml",
+              "RelativeToolTip": "Views\\Report\\TopMenuItemsReportView.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAK0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-01-07T15:09:36.798Z"
+              "WhenOpened": "2026-01-29T13:56:16.309Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "AllAreasView.cs",
-              "DocumentMoniker": "C:\\Users\\jakub\\Desktop\\programowanie desktopowych aplikacji biznesowych\\Projekt1\\RestaurantApp\\Views\\Areas\\AllAreasView.cs",
-              "RelativeDocumentMoniker": "Views\\Areas\\AllAreasView.cs",
-              "ToolTip": "C:\\Users\\jakub\\Desktop\\programowanie desktopowych aplikacji biznesowych\\Projekt1\\RestaurantApp\\Views\\Areas\\AllAreasView.cs",
-              "RelativeToolTip": "Views\\Areas\\AllAreasView.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 4,
+              "Title": "DailySalesReportViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\jakub\\Desktop\\programowanie desktopowych aplikacji biznesowych\\Projekt1\\RestaurantApp\\ViewModels\\DailySalesReportViewModel.cs",
+              "RelativeDocumentMoniker": "ViewModels\\DailySalesReportViewModel.cs",
+              "ToolTip": "C:\\Users\\jakub\\Desktop\\programowanie desktopowych aplikacji biznesowych\\Projekt1\\RestaurantApp\\ViewModels\\DailySalesReportViewModel.cs",
+              "RelativeToolTip": "ViewModels\\DailySalesReportViewModel.cs",
+              "ViewState": "AgIAAF4AAAAAAAAAAADwv34AAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-07T15:42:15.247Z"
+              "WhenOpened": "2026-01-29T13:55:58.538Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "AllAreasView.xaml",
-              "DocumentMoniker": "C:\\Users\\jakub\\Desktop\\programowanie desktopowych aplikacji biznesowych\\Projekt1\\RestaurantApp\\Views\\Areas\\AllAreasView.xaml",
-              "RelativeDocumentMoniker": "Views\\Areas\\AllAreasView.xaml",
-              "ToolTip": "C:\\Users\\jakub\\Desktop\\programowanie desktopowych aplikacji biznesowych\\Projekt1\\RestaurantApp\\Views\\Areas\\AllAreasView.xaml",
-              "RelativeToolTip": "Views\\Areas\\AllAreasView.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-12-19T16:50:47.992Z"
+              "DocumentIndex": 2,
+              "Title": "TopMenuItemsReportViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\jakub\\Desktop\\programowanie desktopowych aplikacji biznesowych\\Projekt1\\RestaurantApp\\ViewModels\\TopMenuItemsReportViewModel.cs",
+              "RelativeDocumentMoniker": "ViewModels\\TopMenuItemsReportViewModel.cs",
+              "ToolTip": "C:\\Users\\jakub\\Desktop\\programowanie desktopowych aplikacji biznesowych\\Projekt1\\RestaurantApp\\ViewModels\\TopMenuItemsReportViewModel.cs",
+              "RelativeToolTip": "ViewModels\\TopMenuItemsReportViewModel.cs",
+              "ViewState": "AgIAAEEAAAAAAAAAAAAiwFQAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-29T13:55:45.383Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
+              "Title": "DailySalesReportView.xaml",
+              "DocumentMoniker": "C:\\Users\\jakub\\Desktop\\programowanie desktopowych aplikacji biznesowych\\Projekt1\\RestaurantApp\\Views\\Report\\DailySalesReportView.xaml",
+              "RelativeDocumentMoniker": "Views\\Report\\DailySalesReportView.xaml",
+              "ToolTip": "C:\\Users\\jakub\\Desktop\\programowanie desktopowych aplikacji biznesowych\\Projekt1\\RestaurantApp\\Views\\Report\\DailySalesReportView.xaml",
+              "RelativeToolTip": "Views\\Report\\DailySalesReportView.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-01-29T14:04:52.82Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "TopMenuItemsReportRowDto.cs",
+              "DocumentMoniker": "C:\\Users\\jakub\\Desktop\\programowanie desktopowych aplikacji biznesowych\\Projekt1\\RestaurantApp\\Dtos\\TopMenuItemsReportRowDto.cs",
+              "RelativeDocumentMoniker": "Dtos\\TopMenuItemsReportRowDto.cs",
+              "ToolTip": "C:\\Users\\jakub\\Desktop\\programowanie desktopowych aplikacji biznesowych\\Projekt1\\RestaurantApp\\Dtos\\TopMenuItemsReportRowDto.cs",
+              "RelativeToolTip": "Dtos\\TopMenuItemsReportRowDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-29T13:55:35.83Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "TableUsageReportRowDto.cs",
+              "DocumentMoniker": "C:\\Users\\jakub\\Desktop\\programowanie desktopowych aplikacji biznesowych\\Projekt1\\RestaurantApp\\Dtos\\TableUsageReportRowDto.cs",
+              "RelativeDocumentMoniker": "Dtos\\TableUsageReportRowDto.cs",
+              "ToolTip": "C:\\Users\\jakub\\Desktop\\programowanie desktopowych aplikacji biznesowych\\Projekt1\\RestaurantApp\\Dtos\\TableUsageReportRowDto.cs",
+              "RelativeToolTip": "Dtos\\TableUsageReportRowDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-29T13:55:29.892Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "DailySalesReportRowDto.cs",
+              "DocumentMoniker": "C:\\Users\\jakub\\Desktop\\programowanie desktopowych aplikacji biznesowych\\Projekt1\\RestaurantApp\\Dtos\\DailySalesReportRowDto.cs",
+              "RelativeDocumentMoniker": "Dtos\\DailySalesReportRowDto.cs",
+              "ToolTip": "C:\\Users\\jakub\\Desktop\\programowanie desktopowych aplikacji biznesowych\\Projekt1\\RestaurantApp\\Dtos\\DailySalesReportRowDto.cs",
+              "RelativeToolTip": "Dtos\\DailySalesReportRowDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-29T13:55:18.408Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
               "Title": "AddAreaViewModel.cs",
               "DocumentMoniker": "C:\\Users\\jakub\\Desktop\\programowanie desktopowych aplikacji biznesowych\\Projekt1\\RestaurantApp\\ViewModels\\AddAreaViewModel.cs",
               "RelativeDocumentMoniker": "ViewModels\\AddAreaViewModel.cs",
               "ToolTip": "C:\\Users\\jakub\\Desktop\\programowanie desktopowych aplikacji biznesowych\\Projekt1\\RestaurantApp\\ViewModels\\AddAreaViewModel.cs",
               "RelativeToolTip": "ViewModels\\AddAreaViewModel.cs",
-              "ViewState": "AgIAAIkAAAAAAAAAAAAiwJkAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAIMAAAAAAAAAAAAiwJgAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-19T16:54:53.031Z"
+              "WhenOpened": "2025-12-19T16:54:53.031Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 11,
               "Title": "AddMenuItemViewModel.cs",
               "DocumentMoniker": "C:\\Users\\jakub\\Desktop\\programowanie desktopowych aplikacji biznesowych\\Projekt1\\RestaurantApp\\ViewModels\\AddMenuItemViewModel.cs",
               "RelativeDocumentMoniker": "ViewModels\\AddMenuItemViewModel.cs",
               "ToolTip": "C:\\Users\\jakub\\Desktop\\programowanie desktopowych aplikacji biznesowych\\Projekt1\\RestaurantApp\\ViewModels\\AddMenuItemViewModel.cs",
               "RelativeToolTip": "ViewModels\\AddMenuItemViewModel.cs",
-              "ViewState": "AgIAAF0AAAAAAAAAAAAiwHoAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAIYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-27T15:24:38.297Z"
+              "WhenOpened": "2026-01-27T15:24:38.297Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 14,
+              "Title": "AddMenuItemView.xaml",
+              "DocumentMoniker": "C:\\Users\\jakub\\Desktop\\programowanie desktopowych aplikacji biznesowych\\Projekt1\\RestaurantApp\\Views\\MenuItems\\AddMenuItemView.xaml",
+              "RelativeDocumentMoniker": "Views\\MenuItems\\AddMenuItemView.xaml",
+              "ToolTip": "C:\\Users\\jakub\\Desktop\\programowanie desktopowych aplikacji biznesowych\\Projekt1\\RestaurantApp\\Views\\MenuItems\\AddMenuItemView.xaml",
+              "RelativeToolTip": "Views\\MenuItems\\AddMenuItemView.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-01-27T16:38:43.024Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
               "Title": "AddAreaView.cs",
               "DocumentMoniker": "C:\\Users\\jakub\\Desktop\\programowanie desktopowych aplikacji biznesowych\\Projekt1\\RestaurantApp\\Views\\Areas\\AddAreaView.cs",
               "RelativeDocumentMoniker": "Views\\Areas\\AddAreaView.cs",
@@ -275,89 +449,46 @@
               "RelativeToolTip": "Views\\Areas\\AddAreaView.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-19T16:51:32.243Z"
+              "WhenOpened": "2025-12-19T16:51:32.243Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 15,
               "Title": "AddMenuItemView.cs",
               "DocumentMoniker": "C:\\Users\\jakub\\Desktop\\programowanie desktopowych aplikacji biznesowych\\Projekt1\\RestaurantApp\\Views\\MenuItems\\AddMenuItemView.cs",
               "RelativeDocumentMoniker": "Views\\MenuItems\\AddMenuItemView.cs",
               "ToolTip": "C:\\Users\\jakub\\Desktop\\programowanie desktopowych aplikacji biznesowych\\Projekt1\\RestaurantApp\\Views\\MenuItems\\AddMenuItemView.cs",
               "RelativeToolTip": "Views\\MenuItems\\AddMenuItemView.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAcAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-27T15:25:25.162Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "AddAreaView.xaml",
-              "DocumentMoniker": "C:\\Users\\jakub\\Desktop\\programowanie desktopowych aplikacji biznesowych\\Projekt1\\RestaurantApp\\Views\\Areas\\AddAreaView.xaml",
-              "RelativeDocumentMoniker": "Views\\Areas\\AddAreaView.xaml",
-              "ToolTip": "C:\\Users\\jakub\\Desktop\\programowanie desktopowych aplikacji biznesowych\\Projekt1\\RestaurantApp\\Views\\Areas\\AddAreaView.xaml",
-              "RelativeToolTip": "Views\\Areas\\AddAreaView.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-12-19T16:51:28.768Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "AssemblyInfo.cs",
-              "DocumentMoniker": "C:\\Users\\jakub\\Desktop\\programowanie desktopowych aplikacji biznesowych\\Projekt1\\RestaurantApp\\AssemblyInfo.cs",
-              "RelativeDocumentMoniker": "AssemblyInfo.cs",
-              "ToolTip": "C:\\Users\\jakub\\Desktop\\programowanie desktopowych aplikacji biznesowych\\Projekt1\\RestaurantApp\\AssemblyInfo.cs",
-              "RelativeToolTip": "AssemblyInfo.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 20,
+              "Title": "MainWindowViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\jakub\\Desktop\\programowanie desktopowych aplikacji biznesowych\\Projekt1\\RestaurantApp\\ViewModels\\MainWindowViewModel.cs",
+              "RelativeDocumentMoniker": "ViewModels\\MainWindowViewModel.cs",
+              "ToolTip": "C:\\Users\\jakub\\Desktop\\programowanie desktopowych aplikacji biznesowych\\Projekt1\\RestaurantApp\\ViewModels\\MainWindowViewModel.cs",
+              "RelativeToolTip": "ViewModels\\MainWindowViewModel.cs",
+              "ViewState": "AgIAANAAAAAAAAAAAAAIwIgBAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-27T16:23:17.892Z"
+              "WhenOpened": "2025-12-19T16:51:18.27Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "AllTablesViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\jakub\\Desktop\\programowanie desktopowych aplikacji biznesowych\\Projekt1\\RestaurantApp\\ViewModels\\AllTablesViewModel.cs",
-              "RelativeDocumentMoniker": "ViewModels\\AllTablesViewModel.cs",
-              "ToolTip": "C:\\Users\\jakub\\Desktop\\programowanie desktopowych aplikacji biznesowych\\Projekt1\\RestaurantApp\\ViewModels\\AllTablesViewModel.cs",
-              "RelativeToolTip": "ViewModels\\AllTablesViewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-27T15:12:57.51Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "AllTablesView.cs",
-              "DocumentMoniker": "C:\\Users\\jakub\\Desktop\\programowanie desktopowych aplikacji biznesowych\\Projekt1\\RestaurantApp\\Views\\Tables\\AllTablesView.cs",
-              "RelativeDocumentMoniker": "Views\\Tables\\AllTablesView.cs",
-              "ToolTip": "C:\\Users\\jakub\\Desktop\\programowanie desktopowych aplikacji biznesowych\\Projekt1\\RestaurantApp\\Views\\Tables\\AllTablesView.cs",
-              "RelativeToolTip": "Views\\Tables\\AllTablesView.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-27T15:13:33.907Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "MainWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\jakub\\Desktop\\programowanie desktopowych aplikacji biznesowych\\Projekt1\\RestaurantApp\\MainWindow.xaml",
-              "RelativeDocumentMoniker": "MainWindow.xaml",
-              "ToolTip": "C:\\Users\\jakub\\Desktop\\programowanie desktopowych aplikacji biznesowych\\Projekt1\\RestaurantApp\\MainWindow.xaml",
-              "RelativeToolTip": "MainWindow.xaml",
+              "DocumentIndex": 18,
+              "Title": "App.xaml",
+              "DocumentMoniker": "C:\\Users\\jakub\\Desktop\\programowanie desktopowych aplikacji biznesowych\\Projekt1\\RestaurantApp\\App.xaml",
+              "RelativeDocumentMoniker": "App.xaml",
+              "ToolTip": "C:\\Users\\jakub\\Desktop\\programowanie desktopowych aplikacji biznesowych\\Projekt1\\RestaurantApp\\App.xaml",
+              "RelativeToolTip": "App.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-12-19T16:50:28.002Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "AllTablesView.xaml",
-              "DocumentMoniker": "C:\\Users\\jakub\\Desktop\\programowanie desktopowych aplikacji biznesowych\\Projekt1\\RestaurantApp\\Views\\Tables\\AllTablesView.xaml",
-              "RelativeDocumentMoniker": "Views\\Tables\\AllTablesView.xaml",
-              "ToolTip": "C:\\Users\\jakub\\Desktop\\programowanie desktopowych aplikacji biznesowych\\Projekt1\\RestaurantApp\\Views\\Tables\\AllTablesView.xaml",
-              "RelativeToolTip": "Views\\Tables\\AllTablesView.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-01-27T15:13:19.334Z"
+              "WhenOpened": "2026-01-07T15:09:36.798Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -367,13 +498,126 @@
               "RelativeDocumentMoniker": "ViewModels\\ValidatableViewModel.cs",
               "ToolTip": "C:\\Users\\jakub\\Desktop\\programowanie desktopowych aplikacji biznesowych\\Projekt1\\RestaurantApp\\ViewModels\\ValidatableViewModel.cs",
               "RelativeToolTip": "ViewModels\\ValidatableViewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-27T15:39:17.443Z"
+              "WhenOpened": "2026-01-27T15:39:17.443Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 21,
+              "Title": "AllAreasView.xaml",
+              "DocumentMoniker": "C:\\Users\\jakub\\Desktop\\programowanie desktopowych aplikacji biznesowych\\Projekt1\\RestaurantApp\\Views\\Areas\\AllAreasView.xaml",
+              "RelativeDocumentMoniker": "Views\\Areas\\AllAreasView.xaml",
+              "ToolTip": "C:\\Users\\jakub\\Desktop\\programowanie desktopowych aplikacji biznesowych\\Projekt1\\RestaurantApp\\Views\\Areas\\AllAreasView.xaml",
+              "RelativeToolTip": "Views\\Areas\\AllAreasView.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-12-19T16:50:47.992Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "AllAreasView.cs",
+              "DocumentMoniker": "C:\\Users\\jakub\\Desktop\\programowanie desktopowych aplikacji biznesowych\\Projekt1\\RestaurantApp\\Views\\Areas\\AllAreasView.cs",
+              "RelativeDocumentMoniker": "Views\\Areas\\AllAreasView.cs",
+              "ToolTip": "C:\\Users\\jakub\\Desktop\\programowanie desktopowych aplikacji biznesowych\\Projekt1\\RestaurantApp\\Views\\Areas\\AllAreasView.cs",
+              "RelativeToolTip": "Views\\Areas\\AllAreasView.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-07T15:42:15.247Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "AddTableView.xaml",
+              "DocumentMoniker": "C:\\Users\\jakub\\Desktop\\programowanie desktopowych aplikacji biznesowych\\Projekt1\\RestaurantApp\\Views\\Tables\\AddTableView.xaml",
+              "RelativeDocumentMoniker": "Views\\Tables\\AddTableView.xaml",
+              "ToolTip": "C:\\Users\\jakub\\Desktop\\programowanie desktopowych aplikacji biznesowych\\Projekt1\\RestaurantApp\\Views\\Tables\\AddTableView.xaml",
+              "RelativeToolTip": "Views\\Tables\\AddTableView.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-01-27T15:14:14.399Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "AddAreaView.xaml",
+              "DocumentMoniker": "C:\\Users\\jakub\\Desktop\\programowanie desktopowych aplikacji biznesowych\\Projekt1\\RestaurantApp\\Views\\Areas\\AddAreaView.xaml",
+              "RelativeDocumentMoniker": "Views\\Areas\\AddAreaView.xaml",
+              "ToolTip": "C:\\Users\\jakub\\Desktop\\programowanie desktopowych aplikacji biznesowych\\Projekt1\\RestaurantApp\\Views\\Areas\\AddAreaView.xaml",
+              "RelativeToolTip": "Views\\Areas\\AddAreaView.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-12-19T16:51:28.768Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "AssemblyInfo.cs",
+              "DocumentMoniker": "C:\\Users\\jakub\\Desktop\\programowanie desktopowych aplikacji biznesowych\\Projekt1\\RestaurantApp\\AssemblyInfo.cs",
+              "RelativeDocumentMoniker": "AssemblyInfo.cs",
+              "ToolTip": "C:\\Users\\jakub\\Desktop\\programowanie desktopowych aplikacji biznesowych\\Projekt1\\RestaurantApp\\AssemblyInfo.cs",
+              "RelativeToolTip": "AssemblyInfo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-27T16:23:17.892Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "AllTablesViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\jakub\\Desktop\\programowanie desktopowych aplikacji biznesowych\\Projekt1\\RestaurantApp\\ViewModels\\AllTablesViewModel.cs",
+              "RelativeDocumentMoniker": "ViewModels\\AllTablesViewModel.cs",
+              "ToolTip": "C:\\Users\\jakub\\Desktop\\programowanie desktopowych aplikacji biznesowych\\Projekt1\\RestaurantApp\\ViewModels\\AllTablesViewModel.cs",
+              "RelativeToolTip": "ViewModels\\AllTablesViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-27T15:12:57.51Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "AllTablesView.cs",
+              "DocumentMoniker": "C:\\Users\\jakub\\Desktop\\programowanie desktopowych aplikacji biznesowych\\Projekt1\\RestaurantApp\\Views\\Tables\\AllTablesView.cs",
+              "RelativeDocumentMoniker": "Views\\Tables\\AllTablesView.cs",
+              "ToolTip": "C:\\Users\\jakub\\Desktop\\programowanie desktopowych aplikacji biznesowych\\Projekt1\\RestaurantApp\\Views\\Tables\\AllTablesView.cs",
+              "RelativeToolTip": "Views\\Tables\\AllTablesView.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-27T15:13:33.907Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\jakub\\Desktop\\programowanie desktopowych aplikacji biznesowych\\Projekt1\\RestaurantApp\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "MainWindow.xaml",
+              "ToolTip": "C:\\Users\\jakub\\Desktop\\programowanie desktopowych aplikacji biznesowych\\Projekt1\\RestaurantApp\\MainWindow.xaml",
+              "RelativeToolTip": "MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-12-19T16:50:28.002Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "AllTablesView.xaml",
+              "DocumentMoniker": "C:\\Users\\jakub\\Desktop\\programowanie desktopowych aplikacji biznesowych\\Projekt1\\RestaurantApp\\Views\\Tables\\AllTablesView.xaml",
+              "RelativeDocumentMoniker": "Views\\Tables\\AllTablesView.xaml",
+              "ToolTip": "C:\\Users\\jakub\\Desktop\\programowanie desktopowych aplikacji biznesowych\\Projekt1\\RestaurantApp\\Views\\Tables\\AllTablesView.xaml",
+              "RelativeToolTip": "Views\\Tables\\AllTablesView.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-01-27T15:13:19.334Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
               "Title": "AllMenuItemsViewModel.cs",
               "DocumentMoniker": "C:\\Users\\jakub\\Desktop\\programowanie desktopowych aplikacji biznesowych\\Projekt1\\RestaurantApp\\ViewModels\\AllMenuItemsViewModel.cs",
               "RelativeDocumentMoniker": "ViewModels\\AllMenuItemsViewModel.cs",
@@ -381,11 +625,12 @@
               "RelativeToolTip": "ViewModels\\AllMenuItemsViewModel.cs",
               "ViewState": "AgIAAEYAAAAAAAAAAAAAwGgAAAAzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-07T14:20:29.975Z"
+              "WhenOpened": "2026-01-07T14:20:29.975Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 29,
               "Title": "MenuItemListItemDto.cs",
               "DocumentMoniker": "C:\\Users\\jakub\\Desktop\\programowanie desktopowych aplikacji biznesowych\\Projekt1\\RestaurantApp\\Dtos\\MenuItemListItemDto.cs",
               "RelativeDocumentMoniker": "Dtos\\MenuItemListItemDto.cs",
@@ -393,22 +638,24 @@
               "RelativeToolTip": "Dtos\\MenuItemListItemDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-07T14:20:18.231Z"
+              "WhenOpened": "2026-01-07T14:20:18.231Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 28,
               "Title": "AllMenuItemsView.xaml",
               "DocumentMoniker": "C:\\Users\\jakub\\Desktop\\programowanie desktopowych aplikacji biznesowych\\Projekt1\\RestaurantApp\\Views\\MenuItems\\AllMenuItemsView.xaml",
               "RelativeDocumentMoniker": "Views\\MenuItems\\AllMenuItemsView.xaml",
               "ToolTip": "C:\\Users\\jakub\\Desktop\\programowanie desktopowych aplikacji biznesowych\\Projekt1\\RestaurantApp\\Views\\MenuItems\\AllMenuItemsView.xaml",
               "RelativeToolTip": "Views\\MenuItems\\AllMenuItemsView.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-01-07T14:23:19.364Z"
+              "WhenOpened": "2026-01-07T14:23:19.364Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 32,
               "Title": "AddTableViewModel.cs",
               "DocumentMoniker": "C:\\Users\\jakub\\Desktop\\programowanie desktopowych aplikacji biznesowych\\Projekt1\\RestaurantApp\\ViewModels\\AddTableViewModel.cs",
               "RelativeDocumentMoniker": "ViewModels\\AddTableViewModel.cs",
@@ -416,11 +663,12 @@
               "RelativeToolTip": "ViewModels\\AddTableViewModel.cs",
               "ViewState": "AgIAAEcAAAAAAAAAAAAqwG0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-27T15:13:49.631Z"
+              "WhenOpened": "2026-01-27T15:13:49.631Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 31,
               "Title": "AddTableView.cs",
               "DocumentMoniker": "C:\\Users\\jakub\\Desktop\\programowanie desktopowych aplikacji biznesowych\\Projekt1\\RestaurantApp\\Views\\Tables\\AddTableView.cs",
               "RelativeDocumentMoniker": "Views\\Tables\\AddTableView.cs",
@@ -428,11 +676,12 @@
               "RelativeToolTip": "Views\\Tables\\AddTableView.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-27T15:14:31.395Z"
+              "WhenOpened": "2026-01-27T15:14:31.395Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 30,
               "Title": "BaseViewModel.cs",
               "DocumentMoniker": "C:\\Users\\jakub\\Desktop\\programowanie desktopowych aplikacji biznesowych\\Projekt1\\RestaurantApp\\ViewModels\\BaseViewModel.cs",
               "RelativeDocumentMoniker": "ViewModels\\BaseViewModel.cs",
@@ -440,11 +689,12 @@
               "RelativeToolTip": "ViewModels\\BaseViewModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-27T15:15:05.631Z"
+              "WhenOpened": "2026-01-27T15:15:05.631Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 34,
               "Title": "TableListItemDto.cs",
               "DocumentMoniker": "C:\\Users\\jakub\\Desktop\\programowanie desktopowych aplikacji biznesowych\\Projekt1\\RestaurantApp\\Dtos\\TableListItemDto.cs",
               "RelativeDocumentMoniker": "Dtos\\TableListItemDto.cs",
@@ -452,11 +702,12 @@
               "RelativeToolTip": "Dtos\\TableListItemDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-27T15:12:42.163Z"
+              "WhenOpened": "2026-01-27T15:12:42.163Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 36,
               "Title": "AllOrdersViewModel.cs",
               "DocumentMoniker": "C:\\Users\\jakub\\Desktop\\programowanie desktopowych aplikacji biznesowych\\Projekt1\\RestaurantApp\\ViewModels\\AllOrdersViewModel.cs",
               "RelativeDocumentMoniker": "ViewModels\\AllOrdersViewModel.cs",
@@ -464,23 +715,12 @@
               "RelativeToolTip": "ViewModels\\AllOrdersViewModel.cs",
               "ViewState": "AgIAAEYAAAAAAAAAAAAAwFwAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-19T16:50:55.443Z"
+              "WhenOpened": "2025-12-19T16:50:55.443Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
-              "Title": "TableUsageReportViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\jakub\\Desktop\\programowanie desktopowych aplikacji biznesowych\\Projekt1\\RestaurantApp\\ViewModels\\TableUsageReportViewModel.cs",
-              "RelativeDocumentMoniker": "ViewModels\\TableUsageReportViewModel.cs",
-              "ToolTip": "C:\\Users\\jakub\\Desktop\\programowanie desktopowych aplikacji biznesowych\\Projekt1\\RestaurantApp\\ViewModels\\TableUsageReportViewModel.cs",
-              "RelativeToolTip": "ViewModels\\TableUsageReportViewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-07T15:41:55.692Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 38,
               "Title": "AllAreasViewModel.cs",
               "DocumentMoniker": "C:\\Users\\jakub\\Desktop\\programowanie desktopowych aplikacji biznesowych\\Projekt1\\RestaurantApp\\ViewModels\\AllAreasViewModel.cs",
               "RelativeDocumentMoniker": "ViewModels\\AllAreasViewModel.cs",
@@ -488,11 +728,12 @@
               "RelativeToolTip": "ViewModels\\AllAreasViewModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-19T16:50:52.336Z"
+              "WhenOpened": "2025-12-19T16:50:52.336Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 35,
               "Title": "UiNotificationMessage.cs",
               "DocumentMoniker": "C:\\Users\\jakub\\Desktop\\programowanie desktopowych aplikacji biznesowych\\Projekt1\\RestaurantApp\\Messages\\UiNotificationMessage.cs",
               "RelativeDocumentMoniker": "Messages\\UiNotificationMessage.cs",
@@ -500,11 +741,12 @@
               "RelativeToolTip": "Messages\\UiNotificationMessage.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAqwAwAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-07T14:53:01.067Z"
+              "WhenOpened": "2026-01-07T14:53:01.067Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 37,
               "Title": "AddOrderViewModel.cs",
               "DocumentMoniker": "C:\\Users\\jakub\\Desktop\\programowanie desktopowych aplikacji biznesowych\\Projekt1\\RestaurantApp\\ViewModels\\AddOrderViewModel.cs",
               "RelativeDocumentMoniker": "ViewModels\\AddOrderViewModel.cs",
@@ -512,22 +754,24 @@
               "RelativeToolTip": "ViewModels\\AddOrderViewModel.cs",
               "ViewState": "AgIAAJsAAAAAAAAAAAA6wMAAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-20T09:22:16.213Z"
+              "WhenOpened": "2025-12-20T09:22:16.213Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 40,
               "Title": "AddOrderView.xaml",
               "DocumentMoniker": "C:\\Users\\jakub\\Desktop\\programowanie desktopowych aplikacji biznesowych\\Projekt1\\RestaurantApp\\Views\\Orders\\AddOrderView.xaml",
               "RelativeDocumentMoniker": "Views\\Orders\\AddOrderView.xaml",
               "ToolTip": "C:\\Users\\jakub\\Desktop\\programowanie desktopowych aplikacji biznesowych\\Projekt1\\RestaurantApp\\Views\\Orders\\AddOrderView.xaml",
               "RelativeToolTip": "Views\\Orders\\AddOrderView.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-01-07T14:48:09.359Z"
+              "WhenOpened": "2026-01-07T14:48:09.359Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 41,
               "Title": "AreaSavedMessage.cs",
               "DocumentMoniker": "C:\\Users\\jakub\\Desktop\\programowanie desktopowych aplikacji biznesowych\\Projekt1\\RestaurantApp\\Messages\\AreaSavedMessage.cs",
               "RelativeDocumentMoniker": "Messages\\AreaSavedMessage.cs",
@@ -535,11 +779,12 @@
               "RelativeToolTip": "Messages\\AreaSavedMessage.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-07T14:52:44.316Z"
+              "WhenOpened": "2026-01-07T14:52:44.316Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 39,
               "Title": "MainWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\jakub\\Desktop\\programowanie desktopowych aplikacji biznesowych\\Projekt1\\RestaurantApp\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "MainWindow.xaml.cs",
@@ -547,11 +792,12 @@
               "RelativeToolTip": "MainWindow.xaml.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-07T15:01:28.746Z"
+              "WhenOpened": "2026-01-07T15:01:28.746Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 46,
               "Title": "Waiter.cs",
               "DocumentMoniker": "C:\\Users\\jakub\\Desktop\\programowanie desktopowych aplikacji biznesowych\\Projekt1\\RestaurantApp\\Entities\\Waiter.cs",
               "RelativeDocumentMoniker": "Entities\\Waiter.cs",
@@ -559,11 +805,12 @@
               "RelativeToolTip": "Entities\\Waiter.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-20T09:22:05.824Z"
+              "WhenOpened": "2025-12-20T09:22:05.824Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 42,
               "Title": "AddOrderView.cs",
               "DocumentMoniker": "C:\\Users\\jakub\\Desktop\\programowanie desktopowych aplikacji biznesowych\\Projekt1\\RestaurantApp\\Views\\Orders\\AddOrderView.cs",
               "RelativeDocumentMoniker": "Views\\Orders\\AddOrderView.cs",
@@ -571,22 +818,24 @@
               "RelativeToolTip": "Views\\Orders\\AddOrderView.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-19T16:51:55.082Z"
+              "WhenOpened": "2025-12-19T16:51:55.082Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 44,
               "Title": "AllOrdersView.xaml",
               "DocumentMoniker": "C:\\Users\\jakub\\Desktop\\programowanie desktopowych aplikacji biznesowych\\Projekt1\\RestaurantApp\\Views\\Orders\\AllOrdersView.xaml",
               "RelativeDocumentMoniker": "Views\\Orders\\AllOrdersView.xaml",
               "ToolTip": "C:\\Users\\jakub\\Desktop\\programowanie desktopowych aplikacji biznesowych\\Projekt1\\RestaurantApp\\Views\\Orders\\AllOrdersView.xaml",
               "RelativeToolTip": "Views\\Orders\\AllOrdersView.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-12-19T16:56:19.769Z"
+              "WhenOpened": "2025-12-19T16:56:19.769Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 43,
               "Title": "OrderSavedMessage.cs",
               "DocumentMoniker": "C:\\Users\\jakub\\Desktop\\programowanie desktopowych aplikacji biznesowych\\Projekt1\\RestaurantApp\\Messages\\OrderSavedMessage.cs",
               "RelativeDocumentMoniker": "Messages\\OrderSavedMessage.cs",
@@ -594,11 +843,12 @@
               "RelativeToolTip": "Messages\\OrderSavedMessage.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-19T16:49:06.548Z"
+              "WhenOpened": "2025-12-19T16:49:06.548Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 48,
               "Title": "OrderItem.cs",
               "DocumentMoniker": "C:\\Users\\jakub\\Desktop\\programowanie desktopowych aplikacji biznesowych\\Projekt1\\RestaurantApp\\Entities\\OrderItem.cs",
               "RelativeDocumentMoniker": "Entities\\OrderItem.cs",
@@ -606,11 +856,12 @@
               "RelativeToolTip": "Entities\\OrderItem.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-07T14:40:19.624Z"
+              "WhenOpened": "2026-01-07T14:40:19.624Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 45,
               "Title": "AllOrdersView.cs",
               "DocumentMoniker": "C:\\Users\\jakub\\Desktop\\programowanie desktopowych aplikacji biznesowych\\Projekt1\\RestaurantApp\\Views\\Orders\\AllOrdersView.cs",
               "RelativeDocumentMoniker": "Views\\Orders\\AllOrdersView.cs",
@@ -618,11 +869,12 @@
               "RelativeToolTip": "Views\\Orders\\AllOrdersView.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-07T14:45:07.287Z"
+              "WhenOpened": "2026-01-07T14:45:07.287Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
+              "DocumentIndex": 50,
               "Title": "Order.cs",
               "DocumentMoniker": "C:\\Users\\jakub\\Desktop\\programowanie desktopowych aplikacji biznesowych\\Projekt1\\RestaurantApp\\Entities\\Order.cs",
               "RelativeDocumentMoniker": "Entities\\Order.cs",
@@ -630,11 +882,12 @@
               "RelativeToolTip": "Entities\\Order.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-07T14:39:37.186Z"
+              "WhenOpened": "2026-01-07T14:39:37.186Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 47,
               "Title": "OrderListItemDto.cs",
               "DocumentMoniker": "C:\\Users\\jakub\\Desktop\\programowanie desktopowych aplikacji biznesowych\\Projekt1\\RestaurantApp\\Dtos\\OrderListItemDto.cs",
               "RelativeDocumentMoniker": "Dtos\\OrderListItemDto.cs",
@@ -642,11 +895,12 @@
               "RelativeToolTip": "Dtos\\OrderListItemDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-07T14:40:47.121Z"
+              "WhenOpened": "2026-01-07T14:40:47.121Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 41,
+              "DocumentIndex": 52,
               "Title": "AddOrderView.xaml",
               "DocumentMoniker": "C:\\Users\\jakub\\Desktop\\programowanie desktopowych aplikacji biznesowych\\Projekt1\\RestaurantApp\\Views\\Orders\\AddOrderView.xaml",
               "RelativeDocumentMoniker": "Views\\Orders\\AddOrderView.xaml",
@@ -657,7 +911,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 51,
               "Title": "MenuItem.cs",
               "DocumentMoniker": "C:\\Users\\jakub\\Desktop\\programowanie desktopowych aplikacji biznesowych\\Projekt1\\RestaurantApp\\Entities\\MenuItem.cs",
               "RelativeDocumentMoniker": "Entities\\MenuItem.cs",
@@ -665,11 +919,12 @@
               "RelativeToolTip": "Entities\\MenuItem.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-07T14:19:40.015Z"
+              "WhenOpened": "2026-01-07T14:19:40.015Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 49,
               "Title": "OrderItemDraftDto.cs",
               "DocumentMoniker": "C:\\Users\\jakub\\Desktop\\programowanie desktopowych aplikacji biznesowych\\Projekt1\\RestaurantApp\\Dtos\\OrderItemDraftDto.cs",
               "RelativeDocumentMoniker": "Dtos\\OrderItemDraftDto.cs",
@@ -677,11 +932,12 @@
               "RelativeToolTip": "Dtos\\OrderItemDraftDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-19T16:48:45.146Z"
+              "WhenOpened": "2025-12-19T16:48:45.146Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 42,
+              "DocumentIndex": 53,
               "Title": "RestaurantDbContext.cs",
               "DocumentMoniker": "C:\\Users\\jakub\\Desktop\\programowanie desktopowych aplikacji biznesowych\\Projekt1\\RestaurantApp\\Data\\RestaurantDbContext.cs",
               "RelativeDocumentMoniker": "Data\\RestaurantDbContext.cs",
@@ -689,7 +945,8 @@
               "RelativeToolTip": "Data\\RestaurantDbContext.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-20T09:19:58.011Z"
+              "WhenOpened": "2025-12-20T09:19:58.011Z",
+              "EditorCaption": ""
             }
           ]
         }
